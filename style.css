@@ -3,11 +3,12 @@
     padding: 0;
 }
 
+
 #nav-bar
 {
       position: sticky;
       top: 0;
-     z-index: 10;
+     z-index: 1000;
 }
 
 .navbar-brand img
@@ -31,7 +32,7 @@
 }
 .navbar
 {
-      background: #fff;
+      background: black;
 }
 .navbar-toggler
 {
@@ -48,6 +49,8 @@
 #slider
 {
     width: 100%;
+ height: auto;
+margin-bottom: -150px;
 }
 
 .carousel-caption h5
@@ -56,7 +59,10 @@
       font-size:  42px;
 }
 
-
+#ab
+{
+margin-top: -130px;
+}
 
 #about
 {
@@ -84,7 +90,7 @@
 
 #services
 {
-      background-image:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/slider7.jpg);
+      background-image:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/slider3.jpg);
       background-size: cover;
       background-position: center;
       color: #efefef ! important;
