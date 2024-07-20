@@ -12,8 +12,6 @@
     <meta property="og:image" content="https://nbss.co.in/img/nbsslogo.jpg" />
     <meta property="og:url" content="https://www.nbss.com/admissions/" />
 
-
-
     <!-- Favicon -->
     <link href="https://nbss.co.in/img/nbsslogo.jpg" rel="icon">
 
@@ -37,7 +35,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="displayDate()">
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -85,6 +83,20 @@
         </nav>
         <!-- Navbar End -->
 
+        <marquee id="m5" behavior="RIGHT" scrollamount="7" scrolldelay="10" scrollspeed="3000" onmouseout="this.start()+10;" onmouseover="this.stop();" style="border-width: 0px; border-style: solid; width: 100%;">
+
+
+            <img id="ctl00_Repeater1_ctl00_Image1" src="https://nbss.co.in/img/33.gif" style="width:22px;border-width:0px;">&nbsp;
+            <a id="ctl00_Repeater1_ctl00_HyperLink3" href="admissions.html" target="_blank" style="color:Red;font-size:15px;font-weight:bold;">Thought of the day (<span id="current-date"></span>): Honesty is the best policy .</a>
+    
+    
+            &nbsp;|&nbsp;
+    
+            <img id="ctl00_Repeater1_ctl02_Image1" src="https://nbss.co.in/img/33.gif" style="width:22px;border-width:0px;">&nbsp;
+            <a id="ctl00_Repeater1_ctl02_HyperLink3" href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" style="color:Red;font-size:15px;font-weight:bold;"> Admission for batch 2024-25 are opened from class LKG to IXth std. Click here
+                to apply.</a>
+    
+        </marquee>
 
         <!-- Carousel Start -->
         <div class="container-fluid p-0 mb-5">
@@ -97,7 +109,7 @@
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-3  animated slideInDown mb-2" style="color: #17eadc;" >NBSS</h1>
                                     <p class="fs-5 fw-medium text-white mb-4 pb-2">Nirmala Brijendra Shikshan Sansthan <br>Shukulpur, Sangipur, PBH-230139</p>
-                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInRight">Proceed for Admission<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <a target="_blank"  href="https://wa.me/919794491737?text=Hi%20Sir😀" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInRight">Proceed for Admission<i class="fa fa-arrow-right ms-3"></i></a>
                                     <!-- <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a> -->
                                 </div>
                             </div>
@@ -114,7 +126,7 @@
                                     <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future For Your Child</h1>
                                     <!-- <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p> -->
                                     <!-- <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Proceed for Admission</a> -->
-                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">About Us<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">About Us<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +141,7 @@
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-2 text-white animated slideInDown mb-4">The Best Kindergarten School For Your Child</h1>
                                     <!-- <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p> -->
-                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Proceed for Admission<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank"  class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Proceed for Admission<i class="fa fa-arrow-right ms-3"></i></a>
                                     <!-- <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a> -->
                                 </div>
                             </div>
@@ -147,7 +159,7 @@
                                     <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future For Your Child</h1>
                                     <!-- <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p> -->
                                     <!-- <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Proceed for Admission</a> -->
-                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">About Us<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank"  class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">About Us<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -158,11 +170,11 @@
         <!-- Carousel End -->
 
 
-     
+     <!-- <p>https://api.api-ninjas.com/v1/quotes?category=happiness</p> -->
 
 
         <!-- About Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl ">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
@@ -223,7 +235,7 @@
 
         
         <!-- Call To Action Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl ">
             <div class="container">
                 <div class="bg-light rounded">
                     <div class="row g-0">
@@ -247,7 +259,7 @@
                                    
                                   
                                 </ul>
-                                <a class="btn btn-primary py-3 px-5" href="https://wa.me/919794491737?text=Hi%20Sir😀">Click Here to Apply Now<i class="fa fa-arrow-right ms-2"></i></a>
+                                <a class="btn btn-primary py-3 px-5" target="_blank"  href="https://wa.me/919794491737?text=Hi%20Sir😀">Click Here to Apply Now<i class="fa fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -579,7 +591,7 @@
 
 
         <!-- Appointment Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl">
             <div class="container">
                 <div class="bg-light rounded">
                     <div class="row g-0">
@@ -624,7 +636,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                           <a href="https://wa.me/919794491737?text=Hi%20Sir😀"> <button class="btn btn-primary w-100 py-3" type="submit">Submit</button> </a>
+                                           <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" > <button class="btn btn-primary w-100 py-3" type="submit">Submit</button> </a>
                                         </div>
                                     </div>
                                 </form>
@@ -972,6 +984,19 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        function formatDate() {
+            var today = new Date();
+            var day = String(today.getDate()).padStart(2, '0');
+            var month = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+            var year = today.getFullYear();
+            return day + '/' + month + '/' + year;
+        }
+
+        function displayDate() {
+            document.getElementById('current-date').textContent = formatDate();
+        }
+    </script>
 </body>
 
 </html>
