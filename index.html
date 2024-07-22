@@ -37,7 +37,7 @@
        .ticker{    
     flex-wrap: wrap;
     width: 100%;
-    height: 50px;
+    height: 28px;
     margin: 0 auto;
     position: fixed;
     bottom: 0px;
@@ -45,10 +45,10 @@
     z-index: 20;} 
 
            .news{width: 100%;background: #cc4444;}
-           .news-title{width: 120px;text-align: center;background: #c81c1c;position: absolute; z-index: 10;height: 50px;}
-           .news-title:after{position: absolute;content: "";right: -39px;border-left: 20px solid #c81c1c;border-top: 28px solid transparent;border-right: 20px solid transparent;border-bottom: 21px solid transparent;top: 0px} 
-           .news-title h5{font-size: 15px;margin: 13% 0;color: #fff;} 
-           .news marquee{font-size: 18px;margin-top:15px}
+           .news-title{width: 91px;text-align: center;background: #c81c1c;position: absolute; z-index: 10;height: 50px;}
+           .news-title:after{position: absolute;content: "";right: -39px;border-left: 20px solid #c81c1c;border-top: 18px solid transparent;border-right: 20px solid transparent;border-bottom: 21px solid transparent;top: 0px} 
+           .news-title h5{font-size: 10px;margin: 9% 0;color: #fff;} 
+           .news marquee{font-size: 12px;margin-top:6px}
            .news-content p{margin-right: 41px;display: inline;color: #fff;}
     </style>
 </head>
@@ -100,12 +100,12 @@
             </div>
         </nav>
         <!-- Navbar End -->
-
+<div style="margin-top: -10px;margin-bottom: -10px;">
         <marquee id="m5" behavior="RIGHT" scrollamount="7" scrolldelay="10" scrollspeed="3000" onmouseout="this.start()+10;" onmouseover="this.stop();" style="border-width: 0px; border-style: solid; width: 100%;">
             <img id="ctl00_Repeater1_ctl00_Image1" src="https://nbss.co.in/img/33.gif" style="width:22px;border-width:0px;">&nbsp;
-            <a id="ctl00_Repeater1_ctl00_HyperLink3" href="#" target="_blank" style="color:Red;font-size:15px;font-weight:bold;">Thought of the day (<span id="current-date"></span>): <span id="thought">Loading...</span>.</a>
+            <a id="ctl00_Repeater1_ctl00_HyperLink3" href="#" target="_blank" style="color:Red;font-size:15px;font-weight:bold;">Thought of the day (<span id="current-date"></span>): <span id="thought">Loading...</span></a>
             </marquee>
-        
+        </div>
 
         <!-- Carousel Start -->
         <div class="container-fluid p-0 mb-5">
