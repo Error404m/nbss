@@ -87,7 +87,7 @@
 
 
             <img id="ctl00_Repeater1_ctl00_Image1" src="https://nbss.co.in/img/33.gif" style="width:22px;border-width:0px;">&nbsp;
-            <a id="ctl00_Repeater1_ctl00_HyperLink3" href="admissions.html" target="_blank" style="color:Red;font-size:15px;font-weight:bold;">Thought of the day (<span id="current-date"></span>): Honesty is the best policy .</a>
+            <a id="ctl00_Repeater1_ctl00_HyperLink3" href="admissions.html" target="_blank" style="color:Red;font-size:15px;font-weight:bold;">Thought of the day (<span id="current-date"></span>): Honesty is the best policy .</a><p id="thought">Loading...</p>
     
     
             &nbsp;|&nbsp;
@@ -996,6 +996,31 @@
         function displayDate() {
             document.getElementById('current-date').textContent = formatDate();
         }
+
+
+       
+
+    document.addEventListener("DOMContentLoaded", function() {
+    const defaultThought = "Honesty is the best policy";
+
+    fetch('thought.txt')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('thought').innerText = data || defaultThought;
+        })
+        .catch(error => {
+            console.error('Error fetching the thought:', error);
+            document.getElementById('thought').innerText = defaultThought;
+        });
+});
+
+
+
     </script>
 </body>
 
