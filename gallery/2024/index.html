@@ -1,85 +1,411 @@
-
-
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Album 2020-21 | NBSS</title>
-<link rel="shortcut icon" href="Images/favicon.jpg" type="image/x-icon"/>
-<link rel="Stylesheet" href="../style/bootstrap.css" type="text/css"/>
-<link rel="Stylesheet" href="../style/font-awesome.min.css" type="text/css"/>
-<link rel="Stylesheet" href="../style/style.css" type="text/css"/>
+    <meta charset="utf-8">
+    <title>Gallery 2024-25 | NBSS Shukulpur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo albums from NBSS Shukulpur — Session 2024-25 events including Yoga Day, Ramcharitmanas Path, Teacher's Workshop.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a3a6b;
+            --primary-light: #2563eb;
+            --secondary: #e8b54a;
+            --dark: #0f172a;
+            --text: #334155;
+            --muted: #64748b;
+            --light-bg: #f8faff;
+            --gradient-primary: linear-gradient(135deg, #1a3a6b 0%, #2563eb 100%);
+            --gradient-gold: linear-gradient(135deg, #b8860b 0%, #e8b54a 50%, #ffd700 100%);
+            --shadow-md: 0 8px 32px rgba(26,58,107,0.14);
+            --shadow-lg: 0 20px 60px rgba(26,58,107,0.18);
+            --shadow-xl: 0 30px 80px rgba(26,58,107,0.24);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--light-bg); overflow-x: hidden; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--light-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 3px; }
 
-  <style type="text/css">
-    p.detail { color:#4C4C4C;font-weight:bold;font-family:Calibri;font-size:20 }
-    span.name { color:yellow;font-weight:bold;font-family:Tahoma;font-size:20 ;text-decoration:underline}
+        /* NAVBAR */
+        .navbar {
+            position: sticky; top: 0; z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(26,58,107,0.08);
+            padding: 0 32px;
+            box-shadow: 0 2px 20px rgba(26,58,107,0.06);
+            display: flex; align-items: center; justify-content: space-between; height: 68px;
+        }
+        .navbar-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .brand-logo { width: 46px; height: 46px; border-radius: 50%; background: var(--gradient-primary); padding: 2px; }
+        .brand-logo img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 2px solid white; }
+        .brand-name { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 800; color: var(--primary); }
+        .brand-sub { font-size: 9px; font-weight: 600; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; display: block; margin-top: 2px; }
+        .navbar-back { display: flex; align-items: center; gap: 8px; color: var(--primary-light); font-size: 14px; font-weight: 600; text-decoration: none; padding: 9px 20px; border-radius: 50px; border: 1.5px solid rgba(37,99,235,0.25); transition: var(--transition); }
+        .navbar-back:hover { background: var(--primary-light); color: white; border-color: var(--primary-light); }
+
+        /* HERO */
+        .page-hero {
+            background: var(--gradient-primary);
+            padding: 72px 32px 90px;
+            text-align: center;
+            position: relative; overflow: hidden;
+        }
+        .page-hero::before {
+            content: ''; position: absolute; top: -40%; right: -10%; width: 500px; height: 500px;
+            background: rgba(255,255,255,0.03); border-radius: 50%;
+        }
+        .hero-content { position: relative; z-index: 2; }
+        .breadcrumb-nav {
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            font-size: 13px; color: rgba(255,255,255,0.55); margin-bottom: 16px;
+        }
+        .breadcrumb-nav a { color: var(--secondary); text-decoration: none; font-weight: 600; }
+        .breadcrumb-nav span { color: rgba(255,255,255,0.3); }
+        .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 800; color: white; margin-bottom: 12px; }
+        .page-title span { background: var(--gradient-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .page-subtitle { font-size: 1rem; color: rgba(255,255,255,0.65); max-width: 500px; margin: 0 auto; line-height: 1.8; }
+
+        /* ALBUMS SECTION */
+        .albums-wrap {
+            max-width: 1200px;
+            margin: -48px auto 0;
+            padding: 0 32px 80px;
+            position: relative; z-index: 10;
+        }
+
+        /* ALBUM SECTION */
+        .album-section { margin-bottom: 64px; }
+        .album-header {
+            display: flex; align-items: center; gap: 20px;
+            margin-bottom: 28px;
+            background: white;
+            padding: 24px 28px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            border-left: 5px solid var(--primary-light);
+        }
+        .album-icon {
+            width: 56px; height: 56px; border-radius: var(--radius-sm);
+            background: var(--gradient-primary);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; flex-shrink: 0;
+        }
+        .album-title { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+        .album-date { font-size: 13px; color: var(--muted); font-weight: 500; display: flex; align-items: center; gap: 6px; }
+        .album-photo-count { margin-left: auto; background: var(--light-bg); padding: 8px 18px; border-radius: 50px; font-size: 12px; font-weight: 700; color: var(--primary); border: 1px solid rgba(26,58,107,0.1); white-space: nowrap; }
+
+        /* MASONRY GALLERY */
+        .photo-grid {
+            columns: 4 220px;
+            column-gap: 14px;
+        }
+        .photo-item {
+            break-inside: avoid;
+            margin-bottom: 14px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        .photo-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
+        .photo-item img {
+            width: 100%; display: block;
+            transition: transform 0.5s ease;
+        }
+        .photo-item:hover img { transform: scale(1.04); }
+        .photo-item-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba(15,23,42,0.7) 100%);
+            display: flex; align-items: flex-end; justify-content: center;
+            padding-bottom: 14px;
+            opacity: 0; transition: var(--transition);
+        }
+        .photo-item:hover .photo-item-overlay { opacity: 1; }
+        .zoom-icon {
+            width: 40px; height: 40px; border-radius: 50%;
+            background: rgba(255,255,255,0.9);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--primary); font-size: 16px;
+        }
+
+        /* LIGHTBOX */
+        .lightbox {
+            position: fixed; inset: 0; z-index: 9999;
+            background: rgba(10,15,30,0.97);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .lightbox.open { opacity: 1; visibility: visible; }
+        .lightbox-img-wrap {
+            max-width: 90vw; max-height: 90vh;
+            display: flex; align-items: center; justify-content: center;
+            position: relative;
+        }
+        .lightbox-img {
+            max-width: 90vw; max-height: 85vh;
+            border-radius: var(--radius-md);
+            box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+            object-fit: contain;
+            transition: opacity 0.3s ease;
+        }
+        .lightbox-close {
+            position: fixed; top: 20px; right: 24px;
+            width: 44px; height: 44px; border-radius: 50%;
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+            color: white; font-size: 18px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: var(--transition);
+        }
+        .lightbox-close:hover { background: rgba(239,68,68,0.8); border-color: transparent; }
+        .lightbox-nav {
+            position: fixed; top: 50%; transform: translateY(-50%);
+            width: 50px; height: 50px; border-radius: 50%;
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+            color: white; font-size: 20px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: var(--transition);
+        }
+        .lightbox-nav:hover { background: var(--primary-light); border-color: var(--primary-light); transform: translateY(-50%) scale(1.05); }
+        .lightbox-prev { left: 20px; }
+        .lightbox-next { right: 20px; }
+        .lightbox-counter {
+            position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+            color: rgba(255,255,255,0.55); font-size: 13px; font-weight: 600;
+            background: rgba(255,255,255,0.06); padding: 8px 20px; border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .lightbox-caption {
+            position: fixed; bottom: 68px; left: 50%; transform: translateX(-50%);
+            color: rgba(255,255,255,0.75); font-size: 14px; font-weight: 500;
+            text-align: center; white-space: nowrap;
+        }
+
+        /* FOOTER */
+        .site-footer { background: var(--dark); padding: 32px; text-align: center; }
+        .footer-text { font-size: 13px; color: rgba(255,255,255,0.45); }
+        .footer-text a { color: var(--secondary); text-decoration: none; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .page-hero { padding: 56px 16px 72px; }
+            .albums-wrap { padding: 0 16px 60px; margin-top: -32px; }
+            .photo-grid { columns: 2 140px; }
+            .navbar { padding: 0 16px; }
+            .album-header { flex-wrap: wrap; }
+            .album-photo-count { margin-left: 0; }
+        }
+        @media (max-width: 480px) {
+            .photo-grid { columns: 2 120px; }
+        }
+
+        /* ANIMATIONS */
+        .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
     </style>
 </head>
 <body>
-    
 
-   <div class="container-fluid"> 
-  <!-------------------------------------MObile Header--------------------------------------->
-  <div class="row ">
-    <div class="container-fluid logobg visible-xs">
-      <div class="row">
-        <div class="col-md-12"><a href="https://nbss.co.in"> <img src="../f.gif" class="img-responsive center-block" alt="NBSS"/></a> </div>
-      </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="https://nbss.co.in" class="navbar-brand">
+            <div class="brand-logo">
+                <img src="https://nbss.co.in/img/nbsslogo.jpg" alt="NBSS Logo">
+            </div>
+            <div>
+                <span class="brand-name">NBSS</span>
+                <span class="brand-sub">Shukulpur · Est. 2011</span>
+            </div>
+        </a>
+        <a href="../" class="navbar-back">
+            <i class="fas fa-arrow-left"></i> All Albums
+        </a>
+    </nav>
+
+    <!-- HERO -->
+    <div class="page-hero">
+        <div class="hero-content">
+            <div class="breadcrumb-nav">
+                <a href="https://nbss.co.in">Home</a>
+                <span>/</span>
+                <a href="../">Gallery</a>
+                <span>/</span>
+                <span style="color:rgba(255,255,255,0.7)">2024-25</span>
+            </div>
+            <h1 class="page-title">Session <span>2024 – 25</span></h1>
+            <p class="page-subtitle">Cherished moments from NBSS's vibrant school life — Yoga Day, Ramcharitmanas Path, Teacher's Workshop and more.</p>
+        </div>
     </div>
-    
-   
-   
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 right-side ">
-      <div class="row">
-        <div class="col-md-12 innertopbgr"></div>
-      </div>
 
-   
-  <div class="row">
-      <div class="clr10"></div>
-    <div class="col-md-10 col-sm-10 col-xs-10">
-     <h1 style="padding-left: 120px;" class="heading bot-pad-20 text-center">Photo Gallery Session 2024-25</h1>
+    <!-- ALBUMS -->
+    <div class="albums-wrap">
+
+        <!-- Yoga Day -->
+        <div class="album-section fade-up">
+            <div class="album-header">
+                <div class="album-icon">🧘</div>
+                <div>
+                    <div class="album-title">Yoga Day Celebration</div>
+                    <div class="album-date"><i class="fas fa-calendar"></i> 21 June, 2024</div>
+                </div>
+                <div class="album-photo-count"><i class="fas fa-images"></i> 10 Photos</div>
+            </div>
+            <div class="photo-grid" id="gallery-yoga">
+                <div class="photo-item" onclick="openLightbox('yoga', 0)"><img src="yoga/1.jpg" alt="Yoga Day 1" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('yoga', 1)"><img src="yoga/2.jpg" alt="Yoga Day 2" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('yoga', 2)"><img src="yoga/3.jpg" alt="Yoga Day 3" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('yoga', 3)"><img src="yoga/4.jpg" alt="Yoga Day 4" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('yoga', 4)"><img src="yoga/5.jpg" alt="Yoga Day 5" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('yoga', 5)"><img src="yoga/6.jpg" alt="Yoga Day 6" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('yoga', 6)"><img src="yoga/7.jpg" alt="Yoga Day 7" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('yoga', 7)"><img src="yoga/8.jpg" alt="Yoga Day 8" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('yoga', 8)"><img src="yoga/9.jpg" alt="Yoga Day 9" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('yoga', 9)"><img src="yoga/10.jpg" alt="Yoga Day 10" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+            </div>
+        </div>
+
+        <!-- Ramayan -->
+        <div class="album-section fade-up">
+            <div class="album-header">
+                <div class="album-icon">📖</div>
+                <div>
+                    <div class="album-title">रामचरित मानस पाठ</div>
+                    <div class="album-date"><i class="fas fa-calendar"></i> 14 June, 2024</div>
+                </div>
+                <div class="album-photo-count"><i class="fas fa-images"></i> Photos</div>
+            </div>
+            <div class="photo-grid" id="gallery-ramayan">
+                <div class="photo-item" onclick="openLightbox('ramayan', 0)"><img src="ramayan/1.jpg" alt="Ramayan 1" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('ramayan', 1)"><img src="ramayan/2.jpg" alt="Ramayan 2" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('ramayan', 2)"><img src="ramayan/3.jpg" alt="Ramayan 3" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('ramayan', 3)"><img src="ramayan/4.jpg" alt="Ramayan 4" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('ramayan', 4)"><img src="ramayan/5.jpg" alt="Ramayan 5" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+            </div>
+        </div>
+
+        <!-- Teacher's Workshop -->
+        <div class="album-section fade-up">
+            <div class="album-header">
+                <div class="album-icon">👩‍🏫</div>
+                <div>
+                    <div class="album-title">Teacher's Workshop</div>
+                    <div class="album-date"><i class="fas fa-calendar"></i> 18 May, 2024</div>
+                </div>
+                <div class="album-photo-count"><i class="fas fa-images"></i> Photos</div>
+            </div>
+            <div class="photo-grid" id="gallery-teacher">
+                <div class="photo-item" onclick="openLightbox('teacher', 0)"><img src="teacher/1.jpg" alt="Workshop 1" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('teacher', 1)"><img src="teacher/2.jpg" alt="Workshop 2" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('teacher', 2)"><img src="teacher/3.jpg" alt="Workshop 3" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('teacher', 3)"><img src="teacher/4.jpg" alt="Workshop 4" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+                <div class="photo-item" onclick="openLightbox('teacher', 4)"><img src="teacher/5.jpg" alt="Workshop 5" loading="lazy"><div class="photo-item-overlay"><div class="zoom-icon"><i class="fas fa-expand"></i></div></div></div>
+            </div>
+        </div>
+
     </div>
-   
-  </div>
 
-
-<div class="row">
- <div id="showThree" class="myDiv selected_year">
-
-  <div class='col-xs-6 col-sm-6 col-md-3 gallerygrid'><a href='yoga'><div class='gal-cate'><h3>Yoga Day</h3><h3 style="margin-top: -10px;">21-June-2024</h3><img src=yoga/1.jpg class='img-responsive gal-img' alt='CNSSS'/><h5>View all...</h5></div></a></div>
-  <div class='col-xs-6 col-sm-6 col-md-3 gallerygrid'><a href='ramayan'><div class='gal-cate'><h3>रामचरित मानस पाठ</h3><h3 style="margin-top: -10px;">14-June-2024</h3><img src=ramayan/1.jpg class='img-responsive gal-img' alt='CNSSS'/><h5>View all...</h5></div></a></div>
-  <div class='col-xs-6 col-sm-6 col-md-3 gallerygrid'><a href='teacher'><div class='gal-cate'><h3>Teacher's Workshop</h3><h3 style="margin-top: -10px;">18-May-2024</h3><img src=teacher/2.jpg class='img-responsive gal-img' alt='CNSSS'/><h5>View all...</h5></div></a></div>
-
-
- </div>
- </div>
-
-
-
-
-      
-          
-      
-
-         
-
-      </div>
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightboxOnBg(event)">
+        <div class="lightbox-img-wrap">
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        </div>
+        <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+        <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
     </div>
-  </div>
-</div>
-<div class="clr40"></div>
-<!-------------------------------------Footer Section--------------------------------------->
 
-<div class="footer"> Copyright 2024 By <span> NBSS, </span> Shukulpur &nbsp; | &nbsp; Managed & Hosted By <span class="entab-link"><a href="https://www.instagram.com/iz_mrityunjaya" target="_blank"> <span  class="name">Mrityunjaya Tripathi</span></a></span> 
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p class="footer-text">
+            &copy; 2024 <a href="https://nbss.co.in">NBSS Shukulpur</a>. All Rights Reserved. &nbsp;·&nbsp;
+            Designed by <a href="https://www.instagram.com/iz_mrityunjaya" target="_blank">Mrityunjaya Tripathi</a>
+        </p>
+    </footer>
 
-</div>
+    <script>
+        // ===== GALLERY DATA =====
+        const galleries = {
+            yoga: { folder: 'yoga/', images: ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg'], title: 'Yoga Day 2024' },
+            ramayan: { folder: 'ramayan/', images: ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'], title: 'रामचरित मानस पाठ 2024' },
+            teacher: { folder: 'teacher/', images: ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'], title: "Teacher's Workshop 2024" }
+        };
 
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-       
+        let currentGallery = '', currentIndex = 0;
+
+        function openLightbox(gallery, index) {
+            currentGallery = gallery;
+            currentIndex = index;
+            updateLightbox();
+            document.getElementById('lightbox').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function closeLightboxOnBg(e) {
+            if (e.target === document.getElementById('lightbox')) closeLightbox();
+        }
+
+        function navLightbox(dir) {
+            const g = galleries[currentGallery];
+            currentIndex = (currentIndex + dir + g.images.length) % g.images.length;
+            updateLightbox();
+        }
+
+        function updateLightbox() {
+            const g = galleries[currentGallery];
+            const img = document.getElementById('lightboxImg');
+            img.style.opacity = '0';
+            setTimeout(() => {
+                img.src = g.folder + g.images[currentIndex];
+                img.alt = g.title + ' - Photo ' + (currentIndex + 1);
+                img.style.opacity = '1';
+            }, 150);
+            document.getElementById('lightboxCaption').textContent = g.title;
+            document.getElementById('lightboxCounter').textContent = (currentIndex + 1) + ' / ' + g.images.length;
+        }
+
+        // Keyboard nav
+        document.addEventListener('keydown', e => {
+            const lb = document.getElementById('lightbox');
+            if (!lb.classList.contains('open')) return;
+            if (e.key === 'ArrowRight') navLightbox(1);
+            if (e.key === 'ArrowLeft') navLightbox(-1);
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Error handler for missing images
+        document.querySelectorAll('.photo-item img').forEach(img => {
+            img.addEventListener('error', function() {
+                this.closest('.photo-item').style.display = 'none';
+            });
+        });
+
+        // Fade up
+        const fadeEls = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+            });
+        }, { threshold: 0.1 });
+        fadeEls.forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
