@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>NBSS Shukulpur | Nirmala Brijendra Shikshan Sansthan</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="keywords" content="NBSS, NBSS Shukulpur, Best School Shukulpur, CBSE School Pratapgarh, Nirmala Brijendra Shikshan Sansthan">
-    <meta name="description" content="NBSS Shukulpur — A CBSE English Medium School dedicated to academic excellence, character formation, and holistic development. Admissions Open 2024-25.">
+    <meta name="keywords"
+        content="NBSS, NBSS Shukulpur, Best School Shukulpur, CBSE School Pratapgarh, Nirmala Brijendra Shikshan Sansthan">
+    <meta name="description"
+        content="NBSS Shukulpur — A CBSE English Medium School dedicated to academic excellence, character formation, and holistic development. Admissions Open 2026-27.">
     <meta property="og:title" content="NBSS Shukulpur | Nirmala Brijendra Shikshan Sansthan" />
     <meta property="og:description" content="Shaping futures through excellence in education since 2011." />
     <meta property="og:image" content="https://nbss.co.in/img/5.jpg" />
@@ -17,7 +20,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -43,11 +48,11 @@
             --white: #ffffff;
             --gradient-primary: linear-gradient(135deg, #1a3a6b 0%, #2563eb 100%);
             --gradient-gold: linear-gradient(135deg, #b8860b 0%, #e8b54a 50%, #ffd700 100%);
-            --gradient-hero: linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(26,58,107,0.75) 60%, rgba(37,99,235,0.4) 100%);
-            --shadow-sm: 0 2px 8px rgba(26,58,107,0.08);
-            --shadow-md: 0 8px 32px rgba(26,58,107,0.14);
-            --shadow-lg: 0 20px 60px rgba(26,58,107,0.18);
-            --shadow-xl: 0 30px 80px rgba(26,58,107,0.24);
+            --gradient-hero: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(26, 58, 107, 0.75) 60%, rgba(37, 99, 235, 0.4) 100%);
+            --shadow-sm: 0 2px 8px rgba(26, 58, 107, 0.08);
+            --shadow-md: 0 8px 32px rgba(26, 58, 107, 0.14);
+            --shadow-lg: 0 20px 60px rgba(26, 58, 107, 0.18);
+            --shadow-xl: 0 30px 80px rgba(26, 58, 107, 0.24);
             --radius-sm: 8px;
             --radius-md: 16px;
             --radius-lg: 24px;
@@ -56,9 +61,15 @@
         }
 
         /* ===================== BASE STYLES ===================== */
-        *, *::before, *::after { box-sizing: border-box; }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
 
         body {
             font-family: 'Inter', sans-serif;
@@ -68,13 +79,31 @@
             line-height: 1.7;
         }
 
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
 
         /* ===================== SCROLLBAR ===================== */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: var(--light-bg); }
-        ::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 3px; }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--light-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-light);
+            border-radius: 3px;
+        }
 
         /* ===================== LOADER ===================== */
         #preloader {
@@ -87,13 +116,19 @@
             z-index: 99999;
             transition: opacity 0.6s ease, visibility 0.6s ease;
         }
-        #preloader.hidden { opacity: 0; visibility: hidden; }
+
+        #preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
         .loader-inner {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
         }
+
         .loader-logo {
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
@@ -104,17 +139,29 @@
             background-clip: text;
             animation: pulse-logo 1.5s ease-in-out infinite;
         }
+
         @keyframes pulse-logo {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.7; transform: scale(0.98); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.7;
+                transform: scale(0.98);
+            }
         }
+
         .loader-bar {
             width: 200px;
             height: 3px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 2px;
             overflow: hidden;
         }
+
         .loader-bar-inner {
             height: 100%;
             width: 0%;
@@ -122,7 +169,12 @@
             border-radius: 2px;
             animation: load-bar 1.5s ease-in-out forwards;
         }
-        @keyframes load-bar { to { width: 100%; } }
+
+        @keyframes load-bar {
+            to {
+                width: 100%;
+            }
+        }
 
         /* ===================== ANNOUNCEMENT TICKER ===================== */
         .announcement-bar {
@@ -131,12 +183,14 @@
             position: relative;
             overflow: hidden;
         }
+
         .announcement-bar::before {
             content: '';
             position: absolute;
             inset: 0;
             background: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='1' fill='rgba(255,255,255,0.05)'/%3E%3C/svg%3E");
         }
+
         .announcement-label {
             background: var(--secondary);
             color: var(--dark);
@@ -150,22 +204,43 @@
             flex-shrink: 0;
             animation: glow-pulse 2s ease-in-out infinite;
         }
+
         @keyframes glow-pulse {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(232,181,74,0.4); }
-            50% { box-shadow: 0 0 0 6px rgba(232,181,74,0); }
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(232, 181, 74, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 6px rgba(232, 181, 74, 0);
+            }
         }
+
         .announcement-text {
-            color: rgba(255,255,255,0.9);
+            color: rgba(255, 255, 255, 0.9);
             font-size: 13px;
             font-weight: 500;
             white-space: nowrap;
             animation: marquee-scroll 30s linear infinite;
         }
-        .announcement-text a { color: var(--secondary); text-decoration: none; font-weight: 600; }
-        @keyframes marquee-scroll {
-            0% { transform: translateX(100vw); }
-            100% { transform: translateX(-100%); }
+
+        .announcement-text a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
         }
+
+        @keyframes marquee-scroll {
+            0% {
+                transform: translateX(100vw);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
         .announcement-wrapper {
             display: flex;
             align-items: center;
@@ -178,17 +253,19 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255,255,255,0.97);
+            background: rgba(255, 255, 255, 0.97);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(26,58,107,0.08);
+            border-bottom: 1px solid rgba(26, 58, 107, 0.08);
             padding: 0 24px;
             transition: var(--transition);
-            box-shadow: 0 2px 20px rgba(26,58,107,0.06);
+            box-shadow: 0 2px 20px rgba(26, 58, 107, 0.06);
         }
+
         .main-navbar.scrolled {
             box-shadow: var(--shadow-md);
         }
+
         .navbar-brand-wrap {
             display: flex;
             align-items: center;
@@ -196,6 +273,7 @@
             text-decoration: none;
             padding: 12px 0;
         }
+
         .brand-logo-ring {
             width: 52px;
             height: 52px;
@@ -204,6 +282,7 @@
             padding: 3px;
             flex-shrink: 0;
         }
+
         .brand-logo-ring img {
             width: 100%;
             height: 100%;
@@ -211,7 +290,12 @@
             object-fit: cover;
             border: 2px solid white;
         }
-        .brand-text-wrap { display: flex; flex-direction: column; }
+
+        .brand-text-wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
         .brand-name {
             font-family: 'Playfair Display', serif;
             font-size: 1.4rem;
@@ -220,6 +304,7 @@
             line-height: 1;
             letter-spacing: -0.5px;
         }
+
         .brand-tagline {
             font-size: 9px;
             font-weight: 600;
@@ -229,6 +314,7 @@
             line-height: 1;
             margin-top: 3px;
         }
+
         .nav-menu {
             display: flex;
             align-items: center;
@@ -237,6 +323,7 @@
             padding: 0;
             gap: 4px;
         }
+
         .nav-menu .nav-link {
             font-family: 'Poppins', sans-serif;
             font-size: 13.5px;
@@ -249,6 +336,7 @@
             letter-spacing: 0.2px;
             position: relative;
         }
+
         .nav-menu .nav-link::after {
             content: '';
             position: absolute;
@@ -261,12 +349,20 @@
             transition: var(--transition);
             transform: translateX(-50%);
         }
+
         .nav-menu .nav-link:hover {
             color: var(--primary);
-            background: rgba(37,99,235,0.06);
+            background: rgba(37, 99, 235, 0.06);
         }
-        .nav-menu .nav-link:hover::after { width: 60%; }
-        .nav-menu .nav-link.active { color: var(--primary); }
+
+        .nav-menu .nav-link:hover::after {
+            width: 60%;
+        }
+
+        .nav-menu .nav-link.active {
+            color: var(--primary);
+        }
+
         .dropdown-menu-custom {
             position: absolute;
             top: calc(100% + 8px);
@@ -276,18 +372,20 @@
             border-radius: var(--radius-md);
             box-shadow: var(--shadow-lg);
             padding: 8px;
-            border: 1px solid rgba(26,58,107,0.08);
+            border: 1px solid rgba(26, 58, 107, 0.08);
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
             transition: var(--transition);
             z-index: 100;
         }
+
         .nav-item-dropdown:hover .dropdown-menu-custom {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
         }
+
         .dropdown-menu-custom a {
             display: block;
             padding: 10px 16px;
@@ -298,18 +396,27 @@
             border-radius: var(--radius-sm);
             transition: var(--transition);
         }
+
         .dropdown-menu-custom a:hover {
             background: var(--light-bg);
             color: var(--primary);
             padding-left: 22px;
         }
-        .nav-item-dropdown { position: relative; }
+
+        .nav-item-dropdown {
+            position: relative;
+        }
+
         .dropdown-arrow {
             font-size: 10px;
             margin-left: 4px;
             transition: transform 0.3s ease;
         }
-        .nav-item-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
+
+        .nav-item-dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
         .btn-admission {
             background: var(--gradient-primary);
             color: white !important;
@@ -318,14 +425,19 @@
             font-size: 13px !important;
             font-weight: 700 !important;
             letter-spacing: 0.3px;
-            box-shadow: 0 4px 15px rgba(37,99,235,0.35);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35);
             transition: var(--transition) !important;
         }
+
         .btn-admission:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(37,99,235,0.45) !important;
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.45) !important;
         }
-        .btn-admission::after { display: none !important; }
+
+        .btn-admission::after {
+            display: none !important;
+        }
+
         .navbar-toggler-btn {
             border: none;
             background: none;
@@ -339,6 +451,7 @@
             cursor: pointer;
             padding: 0;
         }
+
         .toggler-line {
             width: 24px;
             height: 2px;
@@ -346,8 +459,12 @@
             border-radius: 2px;
             transition: var(--transition);
         }
+
         @media (max-width: 991px) {
-            .navbar-toggler-btn { display: flex; }
+            .navbar-toggler-btn {
+                display: flex;
+            }
+
             .nav-collapse {
                 display: none;
                 position: absolute;
@@ -356,11 +473,19 @@
                 right: 0;
                 background: white;
                 padding: 16px 24px;
-                border-bottom: 1px solid rgba(26,58,107,0.08);
+                border-bottom: 1px solid rgba(26, 58, 107, 0.08);
                 box-shadow: var(--shadow-md);
             }
-            .nav-collapse.show { display: block; }
-            .nav-menu { flex-direction: column; align-items: flex-start; }
+
+            .nav-collapse.show {
+                display: block;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
             .dropdown-menu-custom {
                 position: static;
                 opacity: 1;
@@ -379,11 +504,13 @@
             min-height: 92vh;
             overflow: hidden;
         }
+
         .hero-slider {
             position: relative;
             width: 100%;
             height: 92vh;
         }
+
         .hero-slide {
             position: absolute;
             inset: 0;
@@ -391,20 +518,24 @@
             transition: opacity 1.2s ease, transform 1.2s ease;
             transform: scale(1.05);
         }
+
         .hero-slide.active {
             opacity: 1;
             transform: scale(1);
         }
+
         .hero-slide-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
         .hero-overlay {
             position: absolute;
             inset: 0;
             background: var(--gradient-hero);
         }
+
         .hero-content {
             position: absolute;
             inset: 0;
@@ -412,12 +543,13 @@
             align-items: center;
             padding: 0 8%;
         }
+
         .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(232,181,74,0.15);
-            border: 1px solid rgba(232,181,74,0.4);
+            background: rgba(232, 181, 74, 0.15);
+            border: 1px solid rgba(232, 181, 74, 0.4);
             color: var(--secondary);
             padding: 6px 16px;
             border-radius: 50px;
@@ -428,6 +560,7 @@
             margin-bottom: 20px;
             backdrop-filter: blur(10px);
         }
+
         .hero-title {
             font-family: 'Playfair Display', serif;
             font-size: clamp(2.8rem, 6vw, 5rem);
@@ -436,21 +569,29 @@
             line-height: 1.1;
             margin-bottom: 20px;
         }
+
         .hero-title .highlight {
             background: var(--gradient-gold);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
         .hero-subtitle {
             font-size: clamp(1rem, 1.8vw, 1.2rem);
-            color: rgba(255,255,255,0.8);
+            color: rgba(255, 255, 255, 0.8);
             max-width: 540px;
             margin-bottom: 36px;
             font-weight: 400;
             line-height: 1.8;
         }
-        .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
         .hero-btn-primary {
             display: inline-flex;
             align-items: center;
@@ -463,18 +604,20 @@
             border-radius: 50px;
             text-decoration: none;
             transition: var(--transition);
-            box-shadow: 0 8px 30px rgba(232,181,74,0.4);
+            box-shadow: 0 8px 30px rgba(232, 181, 74, 0.4);
             letter-spacing: 0.3px;
         }
+
         .hero-btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 14px 40px rgba(232,181,74,0.55);
+            box-shadow: 0 14px 40px rgba(232, 181, 74, 0.55);
         }
+
         .hero-btn-secondary {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             color: white !important;
             font-weight: 600;
             font-size: 14px;
@@ -482,13 +625,15 @@
             border-radius: 50px;
             text-decoration: none;
             transition: var(--transition);
-            border: 1.5px solid rgba(255,255,255,0.4);
+            border: 1.5px solid rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(10px);
         }
+
         .hero-btn-secondary:hover {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             transform: translateY(-3px);
         }
+
         .hero-stats {
             position: absolute;
             bottom: 48px;
@@ -496,9 +641,11 @@
             display: flex;
             gap: 48px;
         }
+
         .hero-stat {
             text-align: left;
         }
+
         .hero-stat-num {
             font-family: 'Playfair Display', serif;
             font-size: 2.4rem;
@@ -506,15 +653,20 @@
             color: white;
             line-height: 1;
         }
-        .hero-stat-num span { color: var(--secondary); }
+
+        .hero-stat-num span {
+            color: var(--secondary);
+        }
+
         .hero-stat-label {
             font-size: 12px;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255, 255, 255, 0.6);
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-top: 4px;
         }
+
         .hero-nav {
             position: absolute;
             bottom: 48px;
@@ -523,19 +675,22 @@
             flex-direction: column;
             gap: 8px;
         }
+
         .hero-dot {
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.4);
+            background: rgba(255, 255, 255, 0.4);
             cursor: pointer;
             transition: var(--transition);
             border: none;
         }
+
         .hero-dot.active {
             background: var(--secondary);
             transform: scale(1.4);
         }
+
         .hero-scroll-hint {
             position: absolute;
             bottom: 24px;
@@ -545,22 +700,39 @@
             flex-direction: column;
             align-items: center;
             gap: 6px;
-            color: rgba(255,255,255,0.5);
+            color: rgba(255, 255, 255, 0.5);
             font-size: 11px;
             letter-spacing: 2px;
             text-transform: uppercase;
             animation: bounce-hint 2s ease-in-out infinite;
         }
+
         @keyframes bounce-hint {
-            0%, 100% { transform: translateX(-50%) translateY(0); }
-            50% { transform: translateX(-50%) translateY(8px); }
+
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(8px);
+            }
         }
 
         /* ===================== SECTION STYLES ===================== */
-        .section-pad { padding: 100px 0; }
-        .section-pad-sm { padding: 60px 0; }
+        .section-pad {
+            padding: 100px 0;
+        }
 
-        .section-header { text-align: center; margin-bottom: 64px; }
+        .section-pad-sm {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
         .section-eyebrow {
             display: inline-block;
             font-size: 12px;
@@ -569,11 +741,12 @@
             letter-spacing: 3px;
             text-transform: uppercase;
             margin-bottom: 12px;
-            background: rgba(37,99,235,0.08);
+            background: rgba(37, 99, 235, 0.08);
             padding: 6px 18px;
             border-radius: 50px;
-            border: 1px solid rgba(37,99,235,0.15);
+            border: 1px solid rgba(37, 99, 235, 0.15);
         }
+
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: clamp(2rem, 4vw, 3rem);
@@ -582,7 +755,11 @@
             line-height: 1.2;
             margin-bottom: 16px;
         }
-        .section-title .accent { color: var(--primary-light); }
+
+        .section-title .accent {
+            color: var(--primary-light);
+        }
+
         .section-desc {
             font-size: 1.05rem;
             color: var(--muted);
@@ -590,6 +767,7 @@
             margin: 0 auto;
             line-height: 1.8;
         }
+
         .divider-line {
             width: 60px;
             height: 4px;
@@ -604,6 +782,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .stats-bar::before {
             content: '';
             position: absolute;
@@ -611,14 +790,16 @@
             right: -10%;
             width: 400px;
             height: 400px;
-            background: rgba(255,255,255,0.04);
+            background: rgba(255, 255, 255, 0.04);
             border-radius: 50%;
         }
+
         .stat-item {
             text-align: center;
             padding: 40px 20px;
             position: relative;
         }
+
         .stat-item:not(:last-child)::after {
             content: '';
             position: absolute;
@@ -626,8 +807,9 @@
             top: 30%;
             height: 40%;
             width: 1px;
-            background: rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.15);
         }
+
         .stat-number {
             font-family: 'Playfair Display', serif;
             font-size: 3rem;
@@ -635,10 +817,14 @@
             color: white;
             line-height: 1;
         }
-        .stat-number .plus { color: var(--secondary); }
+
+        .stat-number .plus {
+            color: var(--secondary);
+        }
+
         .stat-label {
             font-size: 13px;
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             font-weight: 500;
             letter-spacing: 1.5px;
             text-transform: uppercase;
@@ -646,90 +832,232 @@
         }
 
         /* ===================== PRINCIPAL SECTION ===================== */
-        .principal-section { background: var(--light-bg); }
+        .principal-section {
+            background: var(--light-bg);
+        }
+
         .principal-card {
             background: white;
             border-radius: var(--radius-xl);
             overflow: hidden;
             box-shadow: var(--shadow-xl);
         }
+
         .principal-img-col {
             position: relative;
             background: var(--gradient-primary);
-            min-height: 520px;
+            min-height: 480px;
             display: flex;
-            align-items: flex-end;
-            padding: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 48px 32px;
             overflow: hidden;
+            text-align: center;
         }
+
         .principal-img-col::before {
             content: '';
             position: absolute;
-            top: -30%;
-            right: -30%;
-            width: 300px;
-            height: 300px;
-            background: rgba(255,255,255,0.05);
+            top: -25%;
+            right: -25%;
+            width: 320px;
+            height: 320px;
+            background: rgba(255, 255, 255, 0.04);
             border-radius: 50%;
         }
+
         .principal-img-col::after {
             content: '';
             position: absolute;
             bottom: -20%;
             left: -20%;
-            width: 250px;
-            height: 250px;
-            background: rgba(232,181,74,0.08);
+            width: 260px;
+            height: 260px;
+            background: rgba(232, 181, 74, 0.07);
             border-radius: 50%;
         }
+
+        .principal-portrait-ring {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 28px;
+        }
+
+        .principal-portrait-ring::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 50%;
+            border: 2px solid rgba(232, 181, 74, 0.4);
+        }
+
+        .principal-portrait-ring::after {
+            content: '';
+            position: absolute;
+            top: -16px;
+            left: -16px;
+            right: -16px;
+            bottom: -16px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
         .principal-photo {
-            width: 100%;
-            height: 100%;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
             object-fit: cover;
             object-position: center top;
+            border: 4px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 40px rgba(26, 58, 107, 0.2);
+            display: block;
         }
-        .principal-name-badge {
+
+        .principal-portrait-ring {
+            position: relative;
+            display: inline-block;
+        }
+
+        .principal-portrait-ring::before {
+            content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(15,23,42,0.95) 0%, transparent 100%);
-            padding: 40px 32px 32px;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 50%;
+            border: 2px solid rgba(37, 99, 235, 0.25);
         }
-        .principal-content { padding: 56px 56px 56px 48px; }
+
+        .principal-portrait-ring::after {
+            content: '';
+            position: absolute;
+            top: -16px;
+            left: -16px;
+            right: -16px;
+            bottom: -16px;
+            border-radius: 50%;
+            border: 1px solid rgba(37, 99, 235, 0.1);
+        }
+
+        .principal-school-tag {
+            position: relative;
+            z-index: 2;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(232, 181, 74, 0.15);
+            border: 1px solid rgba(232, 181, 74, 0.3);
+            color: var(--secondary);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .principal-stats {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            gap: 24px;
+            margin-top: 28px;
+            justify-content: center;
+        }
+
+        .principal-stat {
+            text-align: center;
+        }
+
+        .principal-stat-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--secondary);
+            line-height: 1;
+        }
+
+        .principal-stat-label {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.55);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        .principal-content-full {
+            padding: 48px 56px 48px;
+        }
+
+        .principal-top-row {
+            display: flex;
+            gap: 48px;
+            align-items: flex-start;
+            margin-bottom: 32px;
+        }
+
+        .principal-portrait-wrap {
+            flex-shrink: 0;
+            width: 160px;
+            text-align: center;
+        }
+
+        .principal-text-wrap {
+            flex: 1;
+        }
+
+        .principal-content {
+            padding: 56px 56px 56px 48px;
+        }
+
         .quote-mark {
             font-family: 'Playfair Display', serif;
             font-size: 6rem;
-            color: rgba(37,99,235,0.1);
+            color: rgba(37, 99, 235, 0.1);
             line-height: 1;
             margin-bottom: -20px;
         }
+
         .principal-message {
             font-size: 1.05rem;
             color: var(--text);
             line-height: 1.9;
             margin-bottom: 24px;
         }
+
         .principal-list {
             list-style: none;
             padding: 0;
             margin: 0 0 32px;
         }
+
         .principal-list li {
             display: flex;
             align-items: flex-start;
             gap: 12px;
             padding: 10px 0;
-            border-bottom: 1px solid rgba(26,58,107,0.06);
+            border-bottom: 1px solid rgba(26, 58, 107, 0.06);
             font-size: 0.95rem;
             color: var(--text);
         }
-        .principal-list li:last-child { border-bottom: none; }
+
+        .principal-list li:last-child {
+            border-bottom: none;
+        }
+
         .principal-list li i {
             color: var(--primary-light);
             margin-top: 4px;
             flex-shrink: 0;
         }
+
         .principal-info-card {
             display: flex;
             align-items: center;
@@ -739,6 +1067,7 @@
             padding: 20px 24px;
             border-left: 4px solid var(--primary-light);
         }
+
         .principal-avatar {
             width: 64px;
             height: 64px;
@@ -747,12 +1076,14 @@
             border: 3px solid var(--primary-light);
             flex-shrink: 0;
         }
+
         .principal-info-name {
             font-family: 'Poppins', sans-serif;
             font-weight: 700;
             color: var(--dark);
             font-size: 1.05rem;
         }
+
         .principal-info-role {
             font-size: 12px;
             font-weight: 600;
@@ -760,8 +1091,17 @@
             text-transform: uppercase;
             letter-spacing: 1.5px;
         }
-        .principal-info-contact { font-size: 13px; color: var(--muted); margin-top: 4px; }
-        .principal-info-contact a { color: var(--primary-light); text-decoration: none; }
+
+        .principal-info-contact {
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+
+        .principal-info-contact a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
 
         /* ===================== FACILITIES ===================== */
         .facility-card {
@@ -770,11 +1110,12 @@
             padding: 40px 32px;
             text-align: center;
             transition: var(--transition);
-            border: 1px solid rgba(26,58,107,0.07);
+            border: 1px solid rgba(26, 58, 107, 0.07);
             position: relative;
             overflow: hidden;
             box-shadow: var(--shadow-sm);
         }
+
         .facility-card::before {
             content: '';
             position: absolute;
@@ -787,12 +1128,17 @@
             transform: scaleX(0);
             transition: var(--transition);
         }
+
         .facility-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-xl);
             border-color: transparent;
         }
-        .facility-card:hover::before { transform: scaleX(1); }
+
+        .facility-card:hover::before {
+            transform: scaleX(1);
+        }
+
         .facility-icon-wrap {
             width: 80px;
             height: 80px;
@@ -804,9 +1150,11 @@
             font-size: 1.8rem;
             transition: var(--transition);
         }
+
         .facility-card:hover .facility-icon-wrap {
             transform: scale(1.1) rotate(5deg);
         }
+
         .facility-title {
             font-family: 'Poppins', sans-serif;
             font-size: 1.1rem;
@@ -814,6 +1162,7 @@
             color: var(--dark);
             margin-bottom: 12px;
         }
+
         .facility-desc {
             font-size: 0.9rem;
             color: var(--muted);
@@ -826,6 +1175,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .admission-section::before {
             content: '';
             position: absolute;
@@ -833,9 +1183,10 @@
             right: -100px;
             width: 500px;
             height: 500px;
-            background: rgba(255,255,255,0.03);
+            background: rgba(255, 255, 255, 0.03);
             border-radius: 50%;
         }
+
         .admission-section::after {
             content: '';
             position: absolute;
@@ -843,10 +1194,15 @@
             left: -100px;
             width: 400px;
             height: 400px;
-            background: rgba(232,181,74,0.05);
+            background: rgba(232, 181, 74, 0.05);
             border-radius: 50%;
         }
-        .admission-content { position: relative; z-index: 2; }
+
+        .admission-content {
+            position: relative;
+            z-index: 2;
+        }
+
         .admission-title {
             font-family: 'Playfair Display', serif;
             font-size: clamp(2rem, 4vw, 2.8rem);
@@ -854,47 +1210,60 @@
             color: white;
             margin-bottom: 12px;
         }
+
         .admission-subtitle {
-            color: rgba(255,255,255,0.75);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 1rem;
             margin-bottom: 36px;
         }
+
         .admission-checklist {
             list-style: none;
             padding: 0;
             margin: 0 0 40px;
         }
+
         .admission-checklist li {
             display: flex;
             align-items: flex-start;
             gap: 14px;
             padding: 12px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            color: rgba(255,255,255,0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.85);
             font-size: 0.95rem;
             line-height: 1.6;
         }
-        .admission-checklist li:last-child { border-bottom: none; }
+
+        .admission-checklist li:last-child {
+            border-bottom: none;
+        }
+
         .check-icon {
             width: 22px;
             height: 22px;
             border-radius: 50%;
-            background: rgba(232,181,74,0.2);
+            background: rgba(232, 181, 74, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
             margin-top: 1px;
         }
-        .check-icon i { color: var(--secondary); font-size: 11px; }
+
+        .check-icon i {
+            color: var(--secondary);
+            font-size: 11px;
+        }
+
         .admission-cta-card {
-            background: rgba(255,255,255,0.08);
+            background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.15);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: var(--radius-xl);
             padding: 48px 40px;
             text-align: center;
         }
+
         .cta-icon {
             width: 80px;
             height: 80px;
@@ -907,6 +1276,7 @@
             font-size: 2rem;
             color: var(--dark);
         }
+
         .btn-gold {
             display: inline-flex;
             align-items: center;
@@ -919,27 +1289,35 @@
             border-radius: 50px;
             text-decoration: none;
             transition: var(--transition);
-            box-shadow: 0 8px 30px rgba(232,181,74,0.4);
+            box-shadow: 0 8px 30px rgba(232, 181, 74, 0.4);
             letter-spacing: 0.3px;
             border: none;
             cursor: pointer;
         }
+
         .btn-gold:hover {
             transform: translateY(-3px);
-            box-shadow: 0 14px 40px rgba(232,181,74,0.55);
+            box-shadow: 0 14px 40px rgba(232, 181, 74, 0.55);
             color: var(--dark);
         }
 
         /* ===================== QUERY FORM ===================== */
-        .query-section { background: var(--light-bg); }
+        .query-section {
+            background: var(--light-bg);
+        }
+
         .form-card {
             background: white;
             border-radius: var(--radius-xl);
             padding: 56px;
             box-shadow: var(--shadow-xl);
-            border: 1px solid rgba(26,58,107,0.07);
+            border: 1px solid rgba(26, 58, 107, 0.07);
         }
-        .form-group-custom { margin-bottom: 20px; }
+
+        .form-group-custom {
+            margin-bottom: 20px;
+        }
+
         .form-label-custom {
             font-size: 13px;
             font-weight: 600;
@@ -948,10 +1326,11 @@
             display: block;
             letter-spacing: 0.3px;
         }
+
         .form-input-custom {
             width: 100%;
             padding: 14px 18px;
-            border: 1.5px solid rgba(26,58,107,0.12);
+            border: 1.5px solid rgba(26, 58, 107, 0.12);
             border-radius: var(--radius-sm);
             font-size: 14px;
             font-family: 'Inter', sans-serif;
@@ -960,12 +1339,18 @@
             transition: var(--transition);
             outline: none;
         }
+
         .form-input-custom:focus {
             border-color: var(--primary-light);
             background: white;
-            box-shadow: 0 0 0 4px rgba(37,99,235,0.08);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
         }
-        textarea.form-input-custom { height: 120px; resize: vertical; }
+
+        textarea.form-input-custom {
+            height: 120px;
+            resize: vertical;
+        }
+
         .btn-primary-custom {
             width: 100%;
             padding: 16px;
@@ -980,21 +1365,32 @@
             letter-spacing: 0.3px;
             font-family: 'Poppins', sans-serif;
         }
+
         .btn-primary-custom:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(37,99,235,0.35);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.35);
         }
 
         /* ===================== TOPPERS SECTION ===================== */
-        .toppers-section { background: white; }
+        .toppers-section {
+            background: white;
+        }
+
         .accordion-pro {
             border-radius: var(--radius-lg);
             overflow: hidden;
             box-shadow: var(--shadow-md);
-            border: 1px solid rgba(26,58,107,0.08);
+            border: 1px solid rgba(26, 58, 107, 0.08);
         }
-        .accordion-pro-item { border-bottom: 1px solid rgba(26,58,107,0.07); }
-        .accordion-pro-item:last-child { border-bottom: none; }
+
+        .accordion-pro-item {
+            border-bottom: 1px solid rgba(26, 58, 107, 0.07);
+        }
+
+        .accordion-pro-item:last-child {
+            border-bottom: none;
+        }
+
         .accordion-pro-btn {
             width: 100%;
             padding: 20px 32px;
@@ -1011,13 +1407,22 @@
             justify-content: space-between;
             transition: var(--transition);
         }
-        .accordion-pro-btn:hover { background: var(--light-bg); color: var(--primary); }
-        .accordion-pro-btn.open { background: var(--gradient-primary); color: white; }
+
+        .accordion-pro-btn:hover {
+            background: var(--light-bg);
+            color: var(--primary);
+        }
+
+        .accordion-pro-btn.open {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
         .accordion-pro-icon {
             width: 28px;
             height: 28px;
             border-radius: 50%;
-            border: 1.5px solid rgba(26,58,107,0.2);
+            border: 1.5px solid rgba(26, 58, 107, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1025,13 +1430,15 @@
             transition: var(--transition);
             flex-shrink: 0;
         }
+
         .accordion-pro-btn.open .accordion-pro-icon {
-            border-color: rgba(255,255,255,0.4);
-            background: rgba(255,255,255,0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.1);
             transform: rotate(45deg);
         }
+
         .accordion-year-badge {
-            background: rgba(37,99,235,0.08);
+            background: rgba(37, 99, 235, 0.08);
             color: var(--primary-light);
             font-size: 11px;
             font-weight: 700;
@@ -1039,22 +1446,33 @@
             border-radius: 20px;
             letter-spacing: 1px;
         }
+
         .accordion-pro-btn.open .accordion-year-badge {
-            background: rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.15);
             color: white;
         }
+
         .accordion-pro-body {
             display: none;
             padding: 32px;
             background: var(--light-bg);
         }
-        .accordion-pro-body.show { display: block; }
+
+        .accordion-pro-body.show {
+            display: block;
+        }
+
         .topper-img-wrap {
             border-radius: var(--radius-md);
             overflow: hidden;
             box-shadow: var(--shadow-md);
         }
-        .topper-img-wrap img { width: 100%; height: auto; display: block; }
+
+        .topper-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
         /* ===================== GALLERY PREVIEW ===================== */
         .gallery-preview-grid {
@@ -1062,34 +1480,47 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 16px;
         }
+
         .gallery-preview-item {
             border-radius: var(--radius-md);
             overflow: hidden;
             aspect-ratio: 1;
             position: relative;
         }
+
         .gallery-preview-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        .gallery-preview-item:hover img { transform: scale(1.08); }
+
+        .gallery-preview-item:hover img {
+            transform: scale(1.08);
+        }
+
         .gallery-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(26,58,107,0.4) 0%, transparent 100%);
+            background: linear-gradient(135deg, rgba(26, 58, 107, 0.4) 0%, transparent 100%);
             opacity: 0;
             transition: var(--transition);
         }
-        .gallery-preview-item:hover .gallery-overlay { opacity: 1; }
+
+        .gallery-preview-item:hover .gallery-overlay {
+            opacity: 1;
+        }
 
         /* ===================== FOOTER ===================== */
         .site-footer {
             background: var(--dark);
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
         }
-        .footer-top { padding: 80px 0 60px; }
+
+        .footer-top {
+            padding: 80px 0 60px;
+        }
+
         .footer-brand-name {
             font-family: 'Playfair Display', serif;
             font-size: 1.6rem;
@@ -1097,6 +1528,7 @@
             color: white;
             margin-bottom: 6px;
         }
+
         .footer-brand-sub {
             font-size: 12px;
             color: var(--secondary);
@@ -1105,33 +1537,41 @@
             text-transform: uppercase;
             margin-bottom: 16px;
         }
+
         .footer-desc {
             font-size: 14px;
             line-height: 1.8;
             margin-bottom: 24px;
-            color: rgba(255,255,255,0.55);
+            color: rgba(255, 255, 255, 0.55);
         }
-        .footer-social-links { display: flex; gap: 10px; }
+
+        .footer-social-links {
+            display: flex;
+            gap: 10px;
+        }
+
         .footer-social-btn {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
             font-size: 15px;
             transition: var(--transition);
         }
+
         .footer-social-btn:hover {
             background: var(--primary-light);
             border-color: var(--primary-light);
             color: white;
             transform: translateY(-3px);
         }
+
         .footer-heading {
             font-family: 'Poppins', sans-serif;
             font-size: 14px;
@@ -1143,6 +1583,7 @@
             position: relative;
             padding-bottom: 12px;
         }
+
         .footer-heading::after {
             content: '';
             position: absolute;
@@ -1153,10 +1594,19 @@
             background: var(--gradient-gold);
             border-radius: 2px;
         }
-        .footer-links { list-style: none; padding: 0; margin: 0; }
-        .footer-links li { margin-bottom: 12px; }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
         .footer-links a {
-            color: rgba(255,255,255,0.55);
+            color: rgba(255, 255, 255, 0.55);
             text-decoration: none;
             font-size: 14px;
             transition: var(--transition);
@@ -1164,6 +1614,7 @@
             align-items: center;
             gap: 8px;
         }
+
         .footer-links a::before {
             content: '\f105';
             font-family: 'Font Awesome 6 Free';
@@ -1172,23 +1623,26 @@
             color: var(--secondary);
             transition: var(--transition);
         }
+
         .footer-links a:hover {
             color: var(--secondary);
             padding-left: 6px;
         }
+
         .footer-contact-item {
             display: flex;
             align-items: flex-start;
             gap: 12px;
             margin-bottom: 16px;
             font-size: 14px;
-            color: rgba(255,255,255,0.55);
+            color: rgba(255, 255, 255, 0.55);
         }
+
         .footer-contact-icon {
             width: 32px;
             height: 32px;
             border-radius: 8px;
-            background: rgba(37,99,235,0.2);
+            background: rgba(37, 99, 235, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1196,25 +1650,32 @@
             color: var(--primary-light);
             font-size: 13px;
         }
+
         .footer-gallery-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 8px;
         }
+
         .footer-gallery-item {
             border-radius: 8px;
             overflow: hidden;
             aspect-ratio: 1;
         }
+
         .footer-gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.4s ease;
         }
-        .footer-gallery-item:hover img { transform: scale(1.1); }
+
+        .footer-gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
         .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.06);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
             padding: 24px 0;
             display: flex;
             align-items: center;
@@ -1222,19 +1683,32 @@
             flex-wrap: wrap;
             gap: 16px;
         }
+
         .footer-copyright {
             font-size: 13px;
-            color: rgba(255,255,255,0.4);
+            color: rgba(255, 255, 255, 0.4);
         }
-        .footer-copyright a { color: var(--secondary); text-decoration: none; }
-        .footer-bottom-links { display: flex; gap: 24px; }
+
+        .footer-copyright a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 24px;
+        }
+
         .footer-bottom-links a {
             font-size: 13px;
-            color: rgba(255,255,255,0.4);
+            color: rgba(255, 255, 255, 0.4);
             text-decoration: none;
             transition: color 0.3s;
         }
-        .footer-bottom-links a:hover { color: var(--secondary); }
+
+        .footer-bottom-links a:hover {
+            color: var(--secondary);
+        }
 
         /* ===================== BACK TO TOP ===================== */
         .back-to-top-btn {
@@ -1260,11 +1734,13 @@
             text-decoration: none;
             font-size: 16px;
         }
+
         .back-to-top-btn.visible {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
         }
+
         .back-to-top-btn:hover {
             transform: translateY(-4px);
             box-shadow: var(--shadow-lg);
@@ -1284,6 +1760,7 @@
             height: 36px;
             overflow: hidden;
         }
+
         .bottom-ticker-label {
             padding: 0 18px;
             background: #922b21;
@@ -1300,10 +1777,12 @@
             clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%);
             padding-right: 30px;
         }
+
         .bottom-ticker-content {
             flex: 1;
             overflow: hidden;
         }
+
         .bottom-ticker-scroll {
             display: flex;
             gap: 80px;
@@ -1313,27 +1792,78 @@
             color: white;
             font-weight: 500;
         }
+
         @keyframes ticker-scroll {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
         }
+
         .ticker-bullet {
-            color: rgba(255,255,255,0.5);
+            color: rgba(255, 255, 255, 0.5);
             margin-right: 6px;
         }
 
         /* ===================== RESPONSIVE ===================== */
         @media (max-width: 768px) {
-            .hero-section { min-height: 70vh; }
-            .hero-slider { height: 70vh; }
-            .hero-content { padding: 0 5%; }
-            .hero-stats { display: none; }
-            .hero-nav { right: 5%; bottom: 32px; }
-            .principal-content { padding: 36px 28px; }
-            .form-card { padding: 32px 24px; }
-            .gallery-preview-grid { grid-template-columns: repeat(2, 1fr); }
-            .section-pad { padding: 60px 0; }
-            .stat-item:not(:last-child)::after { display: none; }
+            .hero-section {
+                min-height: 70vh;
+            }
+
+            .hero-slider {
+                height: 70vh;
+            }
+
+            .hero-content {
+                padding: 0 5%;
+            }
+
+            .hero-stats {
+                display: none;
+            }
+
+            .hero-nav {
+                right: 5%;
+                bottom: 32px;
+            }
+
+            .principal-content {
+                padding: 36px 28px;
+            }
+
+            .principal-content-full {
+                padding: 32px 24px;
+            }
+
+            .principal-top-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+            }
+
+            .principal-portrait-wrap {
+                width: 100%;
+            }
+
+            .form-card {
+                padding: 32px 24px;
+            }
+
+            .gallery-preview-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .section-pad {
+                padding: 60px 0;
+            }
+
+            .stat-item:not(:last-child)::after {
+                display: none;
+            }
         }
 
         /* ===================== ANIMATIONS ===================== */
@@ -1342,14 +1872,27 @@
             transform: translateY(40px);
             transition: opacity 0.7s ease, transform 0.7s ease;
         }
+
         .fade-up.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        .fade-up-delay-1 { transition-delay: 0.1s; }
-        .fade-up-delay-2 { transition-delay: 0.2s; }
-        .fade-up-delay-3 { transition-delay: 0.3s; }
-        .fade-up-delay-4 { transition-delay: 0.4s; }
+
+        .fade-up-delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .fade-up-delay-2 {
+            transition-delay: 0.2s;
+        }
+
+        .fade-up-delay-3 {
+            transition-delay: 0.3s;
+        }
+
+        .fade-up-delay-4 {
+            transition-delay: 0.4s;
+        }
     </style>
 </head>
 
@@ -1359,7 +1902,9 @@
     <div id="preloader">
         <div class="loader-inner">
             <div class="loader-logo">NBSS</div>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;">Shukulpur</div>
+            <div
+                style="font-size:11px;color:rgba(255,255,255,0.4);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;">
+                Shukulpur</div>
             <div class="loader-bar">
                 <div class="loader-bar-inner"></div>
             </div>
@@ -1373,10 +1918,12 @@
                 <span class="announcement-label">📢 Notice</span>
                 <div style="overflow:hidden;flex:1">
                     <div class="announcement-text">
-                        <img src="https://nbss.co.in/img/33.gif" style="width:16px;height:16px;margin-right:8px;vertical-align:middle;" alt="">
-                        Thought of the Day (<span id="current-date">loading...</span>): <strong><span id="thought" style="color:#ffd700">Loading...</span></strong>
+                        <img src="https://nbss.co.in/img/33.gif"
+                            style="width:16px;height:16px;margin-right:8px;vertical-align:middle;" alt="">
+                        Thought of the Day (<span id="current-date">loading...</span>): <strong><span id="thought"
+                                style="color:#ffd700">Loading...</span></strong>
                         &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
-                        Admissions Open for Session 2024-25 — Classes LKG to IXth
+                        Admissions Open for Session 2026-27 — Classes LKG to IXth
                         &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
                         Contact Principal: <a href="tel:+919794491737">+91 9794491737</a>
                     </div>
@@ -1426,7 +1973,7 @@
                     </li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                     <li>
-                        <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" class="nav-link btn-admission">
+                        <a href="https://nbss.co.in/registration" target="_blank" class="nav-link btn-admission">
                             Apply Now <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
@@ -1452,10 +1999,12 @@
                             Welcome to <span class="highlight">NBSS</span><br>Shukulpur
                         </h1>
                         <p class="hero-subtitle">
-                            Nirmala Brijendra Shikshan Sansthan — Shaping brilliant futures through academic excellence, character formation, and holistic development since 2011.
+                            Nirmala Brijendra Shikshan Sansthan — Shaping brilliant futures through academic excellence,
+                            character formation, and holistic development since 2011.
                         </p>
                         <div class="hero-buttons">
-                            <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" class="hero-btn-primary">
+                            <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank"
+                                class="hero-btn-primary">
                                 <i class="fab fa-whatsapp"></i> Apply for Admission
                             </a>
                             <a href="#about" class="hero-btn-secondary">
@@ -1479,10 +2028,12 @@
                             Make A <span class="highlight">Brighter Future</span><br>For Your Child
                         </h1>
                         <p class="hero-subtitle">
-                            At NBSS, every child is nurtured to reach their fullest potential in a disciplined, value-driven environment enriched with modern facilities.
+                            At NBSS, every child is nurtured to reach their fullest potential in a disciplined,
+                            value-driven environment enriched with modern facilities.
                         </p>
                         <div class="hero-buttons">
-                            <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" class="hero-btn-primary">
+                            <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank"
+                                class="hero-btn-primary">
                                 <i class="fas fa-arrow-right"></i> Get In Touch
                             </a>
                             <a href="#facilities" class="hero-btn-secondary">
@@ -1506,11 +2057,12 @@
                             The Best School<br>For Your <span class="highlight">Child's Growth</span>
                         </h1>
                         <p class="hero-subtitle">
-                            From kindergarten to Class X, NBSS provides a strong academic foundation with co-curricular activities for all-round development.
+                            From kindergarten to Class X, NBSS provides a strong academic foundation with co-curricular
+                            activities for all-round development.
                         </p>
                         <div class="hero-buttons">
                             <a href="admission" class="hero-btn-primary">
-                                <i class="fas fa-file-alt"></i> Admission 2024-25
+                                <i class="fas fa-file-alt"></i> Admission 2026-27
                             </a>
                             <a href="#toppers" class="hero-btn-secondary">
                                 <i class="fas fa-award"></i> View Toppers
@@ -1587,58 +2139,73 @@
             </div>
 
             <div class="principal-card fade-up">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <div class="principal-img-col">
-                            <img src="https://nbss.co.in/img/5.jpg" alt="Principal NBSS" class="principal-photo">
-                            <div class="principal-name-badge">
-                                <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:white;margin-bottom:4px">Mr. Anuj Shukla</div>
-                                <div style="font-size:12px;color:rgba(255,255,255,0.6);font-weight:600;letter-spacing:1.5px;text-transform:uppercase">Principal, NBSS Shukulpur</div>
+                <div class="principal-content-full">
+                    <div class="quote-mark">"</div>
+                    <div class="principal-top-row">
+                        <div class="principal-portrait-wrap">
+                            <div class="principal-portrait-ring">
+                                <img src="https://nbss.co.in/img/principal.jpg" alt="Mr. Anuj Shukla — Principal NBSS"
+                                    class="principal-photo">
+                            </div>
+                            <div style="text-align:center;margin-top:16px">
+                                <div
+                                    style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:800;color:var(--dark)">
+                                    Mr. Anuj Shukla</div>
+                                <div
+                                    style="font-size:11px;color:var(--primary-light);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-top:4px">
+                                    Principal &amp; Founder</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="principal-content">
-                            <div class="quote-mark">"</div>
+                        <div class="principal-text-wrap">
                             <span class="section-eyebrow" style="margin-bottom:16px">Message</span>
-                            <h3 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:20px;color:var(--dark)">My Dear Well Wishers,</h3>
-
+                            <h3
+                                style="font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:20px;color:var(--dark)">
+                                My Dear Well Wishers,</h3>
                             <p class="principal-message">
-                                Welcome to the corridors of <strong>NBSS Shukulpur</strong>. Our CBSE Board English Medium School, situated in the heart of Shukulpur with a spacious campus, stands as a beacon of academic excellence, skill development, and character formation since its founding in 2011.
+                                Welcome to the corridors of <strong>NBSS Shukulpur</strong>. Our CBSE Board English
+                                Medium School, situated in the heart of Shukulpur with a spacious campus, stands as a
+                                beacon of academic excellence, skill development, and character formation since its
+                                founding in 2011.
                             </p>
                             <p class="principal-message">
-                                The NBSS family — with our efficient and committed staff — ensures that every child who enters our campus grows fully into a fine human being. We envision education that is self-directed, individualized, experience-based, and growth-oriented.
+                                The NBSS family — with our efficient and committed staff — ensures that every child who
+                                enters our campus grows fully into a fine human being. We envision education that is
+                                self-directed, individualized, experience-based, and growth-oriented.
                             </p>
-                            <p class="principal-message" style="margin-bottom:28px">
-                                Students at NBSS have ample opportunity to prove their mettle across curricular and co-curricular activities. Discipline is the backbone of NBSS, while the spirit of national integration is kept alive through our four houses, festivals, and competitions.
+                            <p class="principal-message" style="margin-bottom:0">
+                                Students at NBSS have ample opportunity to prove their mettle across curricular and
+                                co-curricular activities. Discipline is the backbone of NBSS, while the spirit of
+                                national integration is kept alive through our four houses, festivals, and competitions.
                             </p>
+                        </div>
+                    </div>
 
-                            <ul class="principal-list">
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span>Parent-teacher meetings held every month for continuous interaction</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span>Remedial classes arranged for weaker learners to ensure no child is left behind</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span>Regular orientation programmes for staff members to enhance teaching effectiveness</span>
-                                </li>
-                            </ul>
+                    <ul class="principal-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Parent-teacher meetings held every month for continuous interaction</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Remedial classes arranged for weaker learners to ensure no child is left behind</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Regular orientation programmes for staff members to enhance teaching
+                                effectiveness</span>
+                        </li>
+                    </ul>
 
-                            <div class="principal-info-card">
-                                <img src="https://nbss.co.in/img/principal.jpg" alt="Mr. Anuj Shukla" class="principal-avatar">
-                                <div>
-                                    <div class="principal-info-role">Principal</div>
-                                    <div class="principal-info-name">Mr. Anuj Shukla</div>
-                                    <div class="principal-info-contact">
-                                        <a href="mailto:principal@nbss.co.in"><i class="fas fa-envelope me-1"></i>principal@nbss.co.in</a>
-                                        &nbsp;·&nbsp;
-                                        <a href="tel:+919794491737"><i class="fas fa-phone me-1"></i>(+91) 97944 91737</a>
-                                    </div>
-                                </div>
+                    <div class="principal-info-card">
+                        <img src="https://nbss.co.in/img/principal.jpg" alt="Mr. Anuj Shukla" class="principal-avatar">
+                        <div>
+                            <div class="principal-info-role">Principal</div>
+                            <div class="principal-info-name">Mr. Anuj Shukla</div>
+                            <div class="principal-info-contact">
+                                <a href="mailto:principal@nbss.co.in"><i
+                                        class="fas fa-envelope me-1"></i>principal@nbss.co.in</a>
+                                &nbsp;·&nbsp;
+                                <a href="tel:+919794491737"><i class="fas fa-phone me-1"></i>(+91) 97944 91737</a>
                             </div>
                         </div>
                     </div>
@@ -1653,7 +2220,8 @@
             <div class="section-header fade-up">
                 <span class="section-eyebrow">Infrastructure</span>
                 <h2 class="section-title">World-Class <span class="accent">School Facilities</span></h2>
-                <p class="section-desc">NBSS provides best-in-class facilities for the holistic growth of every student — academically, physically, and creatively.</p>
+                <p class="section-desc">NBSS provides best-in-class facilities for the holistic growth of every student
+                    — academically, physically, and creatively.</p>
                 <div class="divider-line"></div>
             </div>
             <div class="row g-4">
@@ -1663,7 +2231,8 @@
                             <i class="fas fa-flask" style="color:#2563eb"></i>
                         </div>
                         <h4 class="facility-title">Science Labs</h4>
-                        <p class="facility-desc">Fully equipped science laboratories for practical learning with live experiments and modern equipment.</p>
+                        <p class="facility-desc">Fully equipped science laboratories for practical learning with live
+                            experiments and modern equipment.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-2">
@@ -1672,7 +2241,8 @@
                             <i class="fas fa-futbol" style="color:#16a34a"></i>
                         </div>
                         <h4 class="facility-title">Playground</h4>
-                        <p class="facility-desc">Spacious playground area supporting all co-curricular sports activities and physical development.</p>
+                        <p class="facility-desc">Spacious playground area supporting all co-curricular sports activities
+                            and physical development.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-3">
@@ -1681,7 +2251,8 @@
                             <i class="fas fa-desktop" style="color:#d97706"></i>
                         </div>
                         <h4 class="facility-title">Computer Lab</h4>
-                        <p class="facility-desc">Modern computer lab equipped with trending software and applications for digital literacy.</p>
+                        <p class="facility-desc">Modern computer lab equipped with trending software and applications
+                            for digital literacy.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-4">
@@ -1690,7 +2261,8 @@
                             <i class="fas fa-music" style="color:#dc2626"></i>
                         </div>
                         <h4 class="facility-title">Music Classes</h4>
-                        <p class="facility-desc">NBSS offers comprehensive musical education with instruments and expert instructors for all students.</p>
+                        <p class="facility-desc">NBSS offers comprehensive musical education with instruments and expert
+                            instructors for all students.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-1">
@@ -1699,7 +2271,8 @@
                             <i class="fas fa-book-open" style="color:#7c3aed"></i>
                         </div>
                         <h4 class="facility-title">Library</h4>
-                        <p class="facility-desc">Well-stocked library with a vast collection of books, encyclopedias, and educational resources.</p>
+                        <p class="facility-desc">Well-stocked library with a vast collection of books, encyclopedias,
+                            and educational resources.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-2">
@@ -1708,7 +2281,8 @@
                             <i class="fas fa-chalkboard-teacher" style="color:#059669"></i>
                         </div>
                         <h4 class="facility-title">Smart Classes</h4>
-                        <p class="facility-desc">Interactive digital classrooms with smart boards for an engaging and modern learning experience.</p>
+                        <p class="facility-desc">Interactive digital classrooms with smart boards for an engaging and
+                            modern learning experience.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-3">
@@ -1717,7 +2291,8 @@
                             <i class="fas fa-paint-brush" style="color:#db2777"></i>
                         </div>
                         <h4 class="facility-title">Art & Craft</h4>
-                        <p class="facility-desc">Dedicated art room fostering creativity and artistic expression in children from an early age.</p>
+                        <p class="facility-desc">Dedicated art room fostering creativity and artistic expression in
+                            children from an early age.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-4">
@@ -1726,7 +2301,8 @@
                             <i class="fas fa-bus" style="color:#0ea5e9"></i>
                         </div>
                         <h4 class="facility-title">Transport</h4>
-                        <p class="facility-desc">Safe and reliable school transport covering major routes, ensuring every child reaches safely.</p>
+                        <p class="facility-desc">Safe and reliable school transport covering major routes, ensuring
+                            every child reaches safely.</p>
                     </div>
                 </div>
             </div>
@@ -1738,36 +2314,46 @@
         <div class="container admission-content" style="max-width:1200px">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-7">
-                    <span class="section-eyebrow" style="background:rgba(232,181,74,0.15);border-color:rgba(232,181,74,0.4);color:var(--secondary)">Admissions 2024-25</span>
+                    <span class="section-eyebrow"
+                        style="background:rgba(232,181,74,0.15);border-color:rgba(232,181,74,0.4);color:var(--secondary)">Admissions
+                        2026-27</span>
                     <h2 class="admission-title" style="margin-top:16px">
-                        Application for Admission<br>in Session <span style="background:var(--gradient-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">2024-25</span>
+                        Application for Admission<br>in Session <span
+                            style="background:var(--gradient-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">2026-27</span>
                     </h2>
-                    <p class="admission-subtitle">Seats are limited. Apply early to secure your child's place at NBSS Shukulpur.</p>
+                    <p class="admission-subtitle">Seats are limited. Apply early to secure your child's place at NBSS
+                        Shukulpur.</p>
 
                     <ul class="admission-checklist">
                         <li>
                             <div class="check-icon"><i class="fas fa-check"></i></div>
-                            <span>The guardian responsible for the child must personally introduce every candidate to the Principal for admission.</span>
+                            <span>The guardian responsible for the child must personally introduce every candidate to
+                                the Principal for admission.</span>
                         </li>
                         <li>
                             <div class="check-icon"><i class="fas fa-check"></i></div>
-                            <span>New admissions are subject to availability of seats. Admission is strictly on merit basis.</span>
+                            <span>New admissions are subject to availability of seats. Admission is strictly on merit
+                                basis.</span>
                         </li>
                         <li>
                             <div class="check-icon"><i class="fas fa-check"></i></div>
-                            <span>Students from recognized schools must present the original Leaving/Transfer Certificate.</span>
+                            <span>Students from recognized schools must present the original Leaving/Transfer
+                                Certificate.</span>
                         </li>
                         <li>
                             <div class="check-icon"><i class="fas fa-check"></i></div>
-                            <span>Transfer Certificates from outside the state must be countersigned by the state's inspecting authority.</span>
+                            <span>Transfer Certificates from outside the state must be countersigned by the state's
+                                inspecting authority.</span>
                         </li>
                         <li>
                             <div class="check-icon"><i class="fas fa-check"></i></div>
-                            <span>No special references or recommendations will be entertained. Admissions are through proper channels only.</span>
+                            <span>No special references or recommendations will be entertained. Admissions are through
+                                proper channels only.</span>
                         </li>
                         <li>
                             <div class="check-icon"><i class="fas fa-check"></i></div>
-                            <span>The school management reserves the right to admit or retain students in the school.</span>
+                            <span>The school management reserves the right to admit or retain students in the
+                                school.</span>
                         </li>
                     </ul>
                 </div>
@@ -1776,23 +2362,36 @@
                         <div class="cta-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <h3 style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:800;color:white;margin-bottom:12px">Ready to Join NBSS?</h3>
-                        <p style="color:rgba(255,255,255,0.65);font-size:14px;margin-bottom:28px;line-height:1.7">Admission for Classes LKG to IXth are now open. Contact us via WhatsApp for instant response and guidance.</p>
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:800;color:white;margin-bottom:12px">
+                            Ready to Join NBSS?</h3>
+                        <p style="color:rgba(255,255,255,0.65);font-size:14px;margin-bottom:28px;line-height:1.7">
+                            Admission for Classes LKG to IXth are now open. Contact us via WhatsApp for instant response
+                            and guidance.</p>
                         <div style="display:flex;flex-direction:column;gap:12px">
-                            <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" class="btn-gold" style="justify-content:center">
-                                <i class="fab fa-whatsapp" style="font-size:18px"></i> Apply via WhatsApp
+                            <a href="/registration/" target="_blank" class="btn-gold" style="justify-content:center">
+                                Apply Now for Session 2026-27 <i class="fab fa-hand-o-right" style="font-size:18px"></i>
                             </a>
-                            <a href="tel:+919794491737" style="display:flex;align-items:center;justify-content:center;gap:10px;color:rgba(255,255,255,0.65);font-size:14px;text-decoration:none;padding:10px">
+                            <a href="tel:+919794491737"
+                                style="display:flex;align-items:center;justify-content:center;gap:10px;color:rgba(255,255,255,0.65);font-size:14px;text-decoration:none;padding:10px">
                                 <i class="fas fa-phone"></i> +91 97944 91737
                             </a>
                         </div>
                         <div style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1)">
-                            <div style="font-size:12px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px">Available Classes</div>
+                            <div
+                                style="font-size:12px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px">
+                                Available Classes</div>
                             <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center">
-                                <span style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">LKG</span>
-                                <span style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">UKG</span>
-                                <span style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">I - V</span>
-                                <span style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">VI - IX</span>
+                                <span
+                                    style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">LKG</span>
+                                <span
+                                    style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">UKG</span>
+                                <span
+                                    style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">I
+                                    - V</span>
+                                <span
+                                    style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">VI
+                                    - IX</span>
                             </div>
                         </div>
                     </div>
@@ -1807,86 +2406,120 @@
             <div class="section-header fade-up">
                 <span class="section-eyebrow">Get In Touch</span>
                 <h2 class="section-title">Have Any <span class="accent">Query?</span></h2>
-                <p class="section-desc">Fill out the form below and we'll get back to you as soon as possible. You can also reach us directly on WhatsApp.</p>
+                <p class="section-desc">Fill out the form below and we'll get back to you as soon as possible. You can
+                    also reach us directly on WhatsApp.</p>
                 <div class="divider-line"></div>
             </div>
 
             <div class="row g-5 align-items-start">
                 <div class="col-lg-5 fade-up fade-up-delay-1">
                     <div style="margin-bottom:32px">
-                        <h3 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:800;color:var(--dark);margin-bottom:8px">We'd Love to Hear From You</h3>
-                        <p style="color:var(--muted);font-size:0.95rem;line-height:1.8">Whether it's about admissions, academics, or school programs — our team is ready to answer all your questions.</p>
+                        <h3
+                            style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:800;color:var(--dark);margin-bottom:8px">
+                            We'd Love to Hear From You</h3>
+                        <p style="color:var(--muted);font-size:0.95rem;line-height:1.8">Whether it's about admissions,
+                            academics, or school programs — our team is ready to answer all your questions.</p>
                     </div>
                     <div style="display:flex;flex-direction:column;gap:16px">
-                        <div class="footer-contact-item" style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
-                            <div class="footer-contact-icon" style="background:rgba(26,58,107,0.08);color:var(--primary)"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="footer-contact-item"
+                            style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
+                            <div class="footer-contact-icon"
+                                style="background:rgba(26,58,107,0.08);color:var(--primary)"><i
+                                    class="fas fa-map-marker-alt"></i></div>
                             <div>
-                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">Address</div>
-                                <div style="font-size:13px;color:var(--muted)">Shukulpur, Sangipur<br>Pratapgarh — 230139, UP</div>
+                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">Address
+                                </div>
+                                <div style="font-size:13px;color:var(--muted)">Shukulpur, Sangipur<br>Pratapgarh —
+                                    230139, UP</div>
                             </div>
                         </div>
-                        <div class="footer-contact-item" style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
-                            <div class="footer-contact-icon" style="background:rgba(26,58,107,0.08);color:var(--primary)"><i class="fas fa-phone-alt"></i></div>
+                        <div class="footer-contact-item"
+                            style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
+                            <div class="footer-contact-icon"
+                                style="background:rgba(26,58,107,0.08);color:var(--primary)"><i
+                                    class="fas fa-phone-alt"></i></div>
                             <div>
-                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">Phone</div>
-                                <a href="tel:+919794491737" style="font-size:13px;color:var(--primary-light);text-decoration:none;font-weight:600">+91 97944 91737</a>
+                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">Phone
+                                </div>
+                                <a href="tel:+919794491737"
+                                    style="font-size:13px;color:var(--primary-light);text-decoration:none;font-weight:600">+91
+                                    97944 91737</a>
                             </div>
                         </div>
-                        <div class="footer-contact-item" style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
-                            <div class="footer-contact-icon" style="background:rgba(26,58,107,0.08);color:var(--primary)"><i class="fas fa-envelope"></i></div>
+                        <div class="footer-contact-item"
+                            style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
+                            <div class="footer-contact-icon"
+                                style="background:rgba(26,58,107,0.08);color:var(--primary)"><i
+                                    class="fas fa-envelope"></i></div>
                             <div>
-                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">Email</div>
-                                <a href="mailto:info@nbss.co.in" style="font-size:13px;color:var(--primary-light);text-decoration:none;font-weight:600">info@nbss.co.in</a>
+                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">Email
+                                </div>
+                                <a href="mailto:info@nbss.co.in"
+                                    style="font-size:13px;color:var(--primary-light);text-decoration:none;font-weight:600">info@nbss.co.in</a>
                             </div>
                         </div>
-                        <div class="footer-contact-item" style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
-                            <div class="footer-contact-icon" style="background:rgba(22,163,74,0.08);color:#16a34a"><i class="fab fa-whatsapp"></i></div>
+                        <div class="footer-contact-item"
+                            style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
+                            <div class="footer-contact-icon" style="background:rgba(22,163,74,0.08);color:#16a34a"><i
+                                    class="fab fa-whatsapp"></i></div>
                             <div>
-                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">WhatsApp</div>
-                                <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" style="font-size:13px;color:#16a34a;text-decoration:none;font-weight:600">Chat with Us Directly</a>
+                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">WhatsApp
+                                </div>
+                                <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank"
+                                    style="font-size:13px;color:#16a34a;text-decoration:none;font-weight:600">Chat with
+                                    Us Directly</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7 fade-up fade-up-delay-2">
                     <div class="form-card">
-                        <h4 style="font-family:'Poppins',sans-serif;font-weight:700;color:var(--dark);margin-bottom:24px;font-size:1.2rem">Send Us a Message</h4>
+                        <h4
+                            style="font-family:'Poppins',sans-serif;font-weight:700;color:var(--dark);margin-bottom:24px;font-size:1.2rem">
+                            Send Us a Message</h4>
                         <form onsubmit="return false;">
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                     <div class="form-group-custom">
                                         <label class="form-label-custom" for="qName">Guardian's Name</label>
-                                        <input type="text" class="form-input-custom" id="qName" placeholder="Enter full name">
+                                        <input type="text" class="form-input-custom" id="qName"
+                                            placeholder="Enter full name">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group-custom">
                                         <label class="form-label-custom" for="qPhone">Mobile Number</label>
-                                        <input type="tel" class="form-input-custom" id="qPhone" placeholder="+91 00000 00000">
+                                        <input type="tel" class="form-input-custom" id="qPhone"
+                                            placeholder="+91 00000 00000">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group-custom">
                                         <label class="form-label-custom" for="qEmail">Email Address</label>
-                                        <input type="email" class="form-input-custom" id="qEmail" placeholder="your@email.com">
+                                        <input type="email" class="form-input-custom" id="qEmail"
+                                            placeholder="your@email.com">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group-custom">
-                                        <label class="form-label-custom" for="qRoll">Student's Roll Number (if existing student)</label>
-                                        <input type="text" class="form-input-custom" id="qRoll" placeholder="Enter roll number or N/A">
+                                        <label class="form-label-custom" for="qRoll">Student's Roll Number (if existing
+                                            student)</label>
+                                        <input type="text" class="form-input-custom" id="qRoll"
+                                            placeholder="Enter roll number or N/A">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group-custom">
                                         <label class="form-label-custom" for="qMessage">Your Message</label>
-                                        <textarea class="form-input-custom" id="qMessage" placeholder="Describe your query or requirement..."></textarea>
+                                        <textarea class="form-input-custom" id="qMessage"
+                                            placeholder="Describe your query or requirement..."></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" style="display:block;width:100%">
+                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank"
+                                        style="display:block;width:100%">
                                         <button type="button" class="btn-primary-custom">
-                                            <i class="fab fa-whatsapp me-2"></i> Send via WhatsApp
+                                            <i class="fab fa-whatsapp me-2"></i> Send Query
                                         </button>
                                     </a>
                                 </div>
@@ -1904,24 +2537,27 @@
             <div class="section-header fade-up">
                 <span class="section-eyebrow">Academic Achievement</span>
                 <h2 class="section-title">NBSS Board <span class="accent">Toppers</span></h2>
-                <p class="section-desc">Celebrating the brilliant students who have made NBSS proud year after year in the CBSE Board Examinations.</p>
+                <p class="section-desc">Celebrating the brilliant students who have made NBSS proud year after year in
+                    the CBSE Board Examinations.</p>
                 <div class="divider-line"></div>
             </div>
 
             <div class="accordion-pro fade-up">
                 <div class="accordion-pro-item">
-                    <button class="accordion-pro-btn open" id="acc-btn-2024" onclick="toggleAccordion('2024')">
+                    <button class="accordion-pro-btn open" id="acc-btn-2026" onclick="toggleAccordion('2026')">
                         <div style="display:flex;align-items:center;gap:16px">
                             <span class="accordion-year-badge">2024</span>
                             <span>🏆 NBSS Xth Board Toppers — 2024</span>
                         </div>
                         <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
                     </button>
-                    <div class="accordion-pro-body show" id="acc-body-2024">
+                    <div class="accordion-pro-body show" id="acc-body-2026">
                         <div class="topper-img-wrap">
-                            <img src="https://nbss.co.in/img/17.jpg" alt="NBSS Toppers 2024" style="border-radius:var(--radius-md)">
+                            <img src="https://nbss.co.in/img/17.jpg" alt="NBSS Toppers 2026"
+                                style="border-radius:var(--radius-md)">
                         </div>
-                        <p style="margin-top:16px;color:var(--muted);font-size:14px;text-align:center">Class X Board Toppers — Batch 2024</p>
+                        <p style="margin-top:16px;color:var(--muted);font-size:14px;text-align:center">Class X Board
+                            Toppers — Batch 2024</p>
                     </div>
                 </div>
 
@@ -1934,7 +2570,8 @@
                         <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="accordion-pro-body" id="acc-body-2023">
-                        <div style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
+                        <div
+                            style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
                             <i class="fas fa-clock" style="font-size:2rem;color:var(--muted);margin-bottom:12px"></i>
                             <p style="color:var(--muted);margin:0">Results for Batch 2023 coming soon.</p>
                         </div>
@@ -1950,7 +2587,8 @@
                         <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="accordion-pro-body" id="acc-body-2022">
-                        <div style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
+                        <div
+                            style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
                             <i class="fas fa-clock" style="font-size:2rem;color:var(--muted);margin-bottom:12px"></i>
                             <p style="color:var(--muted);margin:0">Results for Batch 2022 coming soon.</p>
                         </div>
@@ -1966,7 +2604,8 @@
                         <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="accordion-pro-body" id="acc-body-2021">
-                        <div style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
+                        <div
+                            style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
                             <i class="fas fa-clock" style="font-size:2rem;color:var(--muted);margin-bottom:12px"></i>
                             <p style="color:var(--muted);margin:0">Results for Batch 2021 coming soon.</p>
                         </div>
@@ -1982,7 +2621,8 @@
                         <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="accordion-pro-body" id="acc-body-2020">
-                        <div style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
+                        <div
+                            style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
                             <i class="fas fa-clock" style="font-size:2rem;color:var(--muted);margin-bottom:12px"></i>
                             <p style="color:var(--muted);margin:0">Results for Batch 2020 coming soon.</p>
                         </div>
@@ -1998,7 +2638,8 @@
                         <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
                     </button>
                     <div class="accordion-pro-body" id="acc-body-2019">
-                        <div style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
+                        <div
+                            style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
                             <i class="fas fa-clock" style="font-size:2rem;color:var(--muted);margin-bottom:12px"></i>
                             <p style="color:var(--muted);margin:0">Results for Batch 2019 coming soon.</p>
                         </div>
@@ -2054,12 +2695,17 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-brand-name">NBSS</div>
                         <div class="footer-brand-sub">Nirmala Brijendra Shikshan Sansthan</div>
-                        <p class="footer-desc">A CBSE affiliated English Medium School in Shukulpur, dedicated to academic excellence and the holistic development of every student since 2011.</p>
+                        <p class="footer-desc">A CBSE affiliated English Medium School in Shukulpur, dedicated to
+                            academic excellence and the holistic development of every student since 2011.</p>
                         <div class="footer-social-links">
-                            <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                            <a href="https://wa.me/919794491737" class="footer-social-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="YouTube"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="https://wa.me/919794491737" class="footer-social-btn" target="_blank"
+                                aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
@@ -2081,28 +2727,38 @@
                         </div>
                         <div class="footer-contact-item">
                             <div class="footer-contact-icon"><i class="fas fa-phone-alt"></i></div>
-                            <a href="tel:+919794491737" style="color:rgba(255,255,255,0.55);text-decoration:none">+91 97944 91737</a>
+                            <a href="tel:+919794491737" style="color:rgba(255,255,255,0.55);text-decoration:none">+91
+                                97944 91737</a>
                         </div>
                         <div class="footer-contact-item">
                             <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
-                            <a href="mailto:info@nbss.co.in" style="color:rgba(255,255,255,0.55);text-decoration:none">info@nbss.co.in</a>
+                            <a href="mailto:info@nbss.co.in"
+                                style="color:rgba(255,255,255,0.55);text-decoration:none">info@nbss.co.in</a>
                         </div>
                         <div class="footer-contact-item">
                             <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
-                            <a href="mailto:principal@nbss.co.in" style="color:rgba(255,255,255,0.55);text-decoration:none">principal@nbss.co.in</a>
+                            <a href="mailto:principal@nbss.co.in"
+                                style="color:rgba(255,255,255,0.55);text-decoration:none">principal@nbss.co.in</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="footer-heading">Photo Gallery</h5>
                         <div class="footer-gallery-grid" style="margin-bottom:16px">
-                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/10.jpg" alt="Gallery"></div>
-                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/11.jpg" alt="Gallery"></div>
-                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/12.jpg" alt="Gallery"></div>
-                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/13.jpg" alt="Gallery"></div>
-                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/2.jpg" alt="Gallery"></div>
-                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/3.jpg" alt="Gallery"></div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/10.jpg" alt="Gallery">
+                            </div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/11.jpg" alt="Gallery">
+                            </div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/12.jpg" alt="Gallery">
+                            </div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/13.jpg" alt="Gallery">
+                            </div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/2.jpg" alt="Gallery">
+                            </div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/3.jpg" alt="Gallery">
+                            </div>
                         </div>
-                        <a href="gallery" style="display:inline-flex;align-items:center;gap:8px;color:var(--secondary);font-size:13px;font-weight:600;text-decoration:none">
+                        <a href="gallery"
+                            style="display:inline-flex;align-items:center;gap:8px;color:var(--secondary);font-size:13px;font-weight:600;text-decoration:none">
                             <i class="fas fa-arrow-right"></i> View All Photos
                         </a>
                     </div>
@@ -2112,7 +2768,7 @@
         <div class="container" style="max-width:1200px">
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    &copy; 2024 <a href="#">NBSS Shukulpur</a>. All Rights Reserved. &nbsp;·&nbsp;
+                    &copy; 2026 <a href="#">NBSS Shukulpur</a>. All Rights Reserved. &nbsp;·&nbsp;
                     Designed & Developed by <a href="#">Mrityunjaya Tripathi</a>
                 </div>
                 <div class="footer-bottom-links">
@@ -2129,10 +2785,14 @@
         <div class="bottom-ticker-label">📢 Announcements</div>
         <div class="bottom-ticker-content">
             <div class="bottom-ticker-scroll">
-                <span><span class="ticker-bullet">●</span> Admission for Batch 2024-25 are open from Class LKG to IXth Standard.</span>
-                <span><span class="ticker-bullet">●</span> Parent-Teacher Meeting every month — all parents are requested to attend.</span>
-                <span><span class="ticker-bullet">●</span> School operates two terms: April–September & October–March.</span>
-                <span><span class="ticker-bullet">●</span> For Admission, contact: +91 97944 91737 or WhatsApp directly.</span>
+                <span><span class="ticker-bullet">●</span> Admission for Batch 2026-27 are open from Class LKG to IXth
+                    Standard.</span>
+                <span><span class="ticker-bullet">●</span> Parent-Teacher Meeting every month — all parents are
+                    requested to attend.</span>
+                <span><span class="ticker-bullet">●</span> School operates two terms: April–September &
+                    October–March.</span>
+                <span><span class="ticker-bullet">●</span> For Admission, contact: +91 97944 91737 or WhatsApp
+                    directly.</span>
                 <span><span class="ticker-bullet">●</span> Remedial classes available for weaker students.</span>
             </div>
         </div>
@@ -2253,4 +2913,5 @@
         });
     </script>
 </body>
+
 </html>

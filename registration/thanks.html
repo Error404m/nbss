@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Application Submitted | NBSS Shukulpur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a3a6b; --primary-light: #2563eb; --secondary: #e8b54a;
+            --dark: #0f172a; --text: #334155; --muted: #64748b; --light-bg: #f8faff;
+            --gradient-primary: linear-gradient(135deg, #1a3a6b 0%, #2563eb 100%);
+            --gradient-gold: linear-gradient(135deg, #b8860b 0%, #e8b54a 50%, #ffd700 100%);
+            --success: #16a34a; --shadow-lg: 0 20px 60px rgba(26,58,107,0.18);
+            --radius-lg: 24px;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif; color: var(--text);
+            background: var(--gradient-primary); min-height: 100vh;
+            display: flex; align-items: center; justify-content: center; padding: 24px;
+        }
+        .thanks-card {
+            background: white; border-radius: var(--radius-lg);
+            padding: 64px 48px; text-align: center;
+            max-width: 560px; width: 100%;
+            box-shadow: var(--shadow-lg);
+            animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.85) translateY(20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .success-ring {
+            width: 100px; height: 100px; border-radius: 50%;
+            background: rgba(22,163,74,0.08); border: 3px solid rgba(22,163,74,0.2);
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 28px;
+            animation: pulseRing 2s ease-in-out infinite;
+        }
+        @keyframes pulseRing {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(22,163,74,0.15); }
+            50% { box-shadow: 0 0 0 16px rgba(22,163,74,0); }
+        }
+        .success-icon { font-size: 2.5rem; color: var(--success); }
+        .thanks-eyebrow {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: rgba(22,163,74,0.08); border: 1px solid rgba(22,163,74,0.2);
+            color: var(--success); padding: 5px 16px; border-radius: 50px;
+            font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .thanks-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem; font-weight: 800; color: var(--dark); line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .thanks-title span {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .thanks-text { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 36px; }
+        .thanks-steps {
+            background: var(--light-bg); border-radius: 16px;
+            padding: 24px; margin-bottom: 36px; text-align: left;
+        }
+        .thanks-steps-title {
+            font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 700;
+            color: var(--primary-light); text-transform: uppercase; letter-spacing: 2px;
+            margin-bottom: 16px; text-align: center;
+        }
+        .thanks-step-item {
+            display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px;
+        }
+        .thanks-step-item:last-child { margin-bottom: 0; }
+        .step-dot {
+            width: 28px; height: 28px; border-radius: 50%;
+            background: var(--gradient-primary); color: white;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 12px; font-weight: 700; flex-shrink: 0;
+        }
+        .step-dot-text { font-size: 13.5px; color: var(--text); line-height: 1.6; padding-top: 3px; }
+        .thanks-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn-home {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 13px 28px; border-radius: 50px;
+            background: var(--gradient-primary); color: white;
+            font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700;
+            text-decoration: none; transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(37,99,235,0.3);
+        }
+        .btn-home:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(37,99,235,0.4); }
+        .nbss-logo {
+            display: flex; align-items: center; gap: 10px; justify-content: center;
+            margin-bottom: 32px;
+        }
+        .nbss-logo img { width: 44px; height: 44px; border-radius: 50%; border: 2px solid rgba(26,58,107,0.15); }
+        .nbss-logo-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 800; color: var(--primary); }
+    </style>
+</head>
+<body>
+
+<div class="thanks-card">
+    <div class="nbss-logo">
+        <img src="https://nbss.co.in/img/nbsslogo.jpg" alt="NBSS Logo">
+        <span class="nbss-logo-name">NBSS Shukulpur</span>
+    </div>
+    <div class="success-ring">
+        <i class="fas fa-check success-icon"></i>
+    </div>
+    <div class="thanks-eyebrow"><i class="fas fa-check-circle"></i> Application Received</div>
+    <h1 class="thanks-title">Thank You for <span>Applying!</span></h1>
+    <p class="thanks-text">Your admission application has been successfully submitted to NBSS Shukulpur. Our team will review your application and get in touch with you shortly.</p>
+
+    <div class="thanks-steps">
+        <div class="thanks-steps-title">What Happens Next?</div>
+        <div class="thanks-step-item">
+            <div class="step-dot">1</div>
+            <div class="step-dot-text">Your application is under review by our admissions committee.</div>
+        </div>
+        <div class="thanks-step-item">
+            <div class="step-dot">2</div>
+            <div class="step-dot-text">You will receive a call or message on the provided contact number within <strong>2–3 working days</strong>.</div>
+        </div>
+        <div class="thanks-step-item">
+            <div class="step-dot">3</div>
+            <div class="step-dot-text">Bring original documents to school for verification on the scheduled interview date.</div>
+        </div>
+    </div>
+
+    <div class="thanks-actions">
+        <a href="https://nbss.co.in" class="btn-home">
+            <i class="fas fa-home"></i> Go to Homepage
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
