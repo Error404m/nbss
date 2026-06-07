@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>NBSS SHUKULPUR</title>
+    <title>NBSS Shukulpur | Nirmala Brijendra Shikshan Sansthan</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="nbss, nbss shukulpur" name="keywords">
-    <meta content="Nirmala Brijendra Shikshan Sansthan" name="description">
-    <meta property="og:title" content="NBSS Shukulpur" />
-    <meta name="description" content="Best school in Shukulpur!!" />
+    <meta name="keywords" content="NBSS, NBSS Shukulpur, Best School Shukulpur, CBSE School Pratapgarh, Nirmala Brijendra Shikshan Sansthan">
+    <meta name="description" content="NBSS Shukulpur — A CBSE English Medium School dedicated to academic excellence, character formation, and holistic development. Admissions Open 2024-25.">
+    <meta property="og:title" content="NBSS Shukulpur | Nirmala Brijendra Shikshan Sansthan" />
+    <meta property="og:description" content="Shaping futures through excellence in education since 2011." />
     <meta property="og:image" content="https://nbss.co.in/img/5.jpg" />
-    <meta property="og:url" content="https://www.nbss.co.in/admissions/" />
+    <meta property="og:url" content="https://www.nbss.co.in/" />
 
     <!-- Favicon -->
     <link href="#" rel="icon">
@@ -18,1031 +17,2240 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
-    
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
     <style>
-       .ticker{    
-    flex-wrap: wrap;
-    width: 100%;
-    height: 28px;
-    margin: 0 auto;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    z-index: 20;} 
+        /* ===================== ROOT DESIGN SYSTEM ===================== */
+        :root {
+            --primary: #1a3a6b;
+            --primary-light: #2563eb;
+            --secondary: #e8b54a;
+            --accent: #ef4444;
+            --dark: #0f172a;
+            --text: #334155;
+            --muted: #64748b;
+            --light-bg: #f8faff;
+            --white: #ffffff;
+            --gradient-primary: linear-gradient(135deg, #1a3a6b 0%, #2563eb 100%);
+            --gradient-gold: linear-gradient(135deg, #b8860b 0%, #e8b54a 50%, #ffd700 100%);
+            --gradient-hero: linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(26,58,107,0.75) 60%, rgba(37,99,235,0.4) 100%);
+            --shadow-sm: 0 2px 8px rgba(26,58,107,0.08);
+            --shadow-md: 0 8px 32px rgba(26,58,107,0.14);
+            --shadow-lg: 0 20px 60px rgba(26,58,107,0.18);
+            --shadow-xl: 0 30px 80px rgba(26,58,107,0.24);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-           .news{width: 100%;background: #cc4444;}
-           .news-title{width: 91px;text-align: center;background: #c81c1c;position: absolute; z-index: 10;height: 50px;}
-           .news-title:after{position: absolute;content: "";right: -39px;border-left: 20px solid #c81c1c;border-top: 18px solid transparent;border-right: 20px solid transparent;border-bottom: 21px solid transparent;top: 0px} 
-           .news-title h5{font-size: 10px;margin: 9% 0;color: #fff;} 
-           .news marquee{font-size: 12px;margin-top:6px}
-           .news-content p{margin-right: 41px;display: inline;color: #fff;}
+        /* ===================== BASE STYLES ===================== */
+        *, *::before, *::after { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: var(--white);
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+
+        /* ===================== SCROLLBAR ===================== */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--light-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 3px; }
+
+        /* ===================== LOADER ===================== */
+        #preloader {
+            position: fixed;
+            inset: 0;
+            background: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+        #preloader.hidden { opacity: 0; visibility: hidden; }
+        .loader-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .loader-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: pulse-logo 1.5s ease-in-out infinite;
+        }
+        @keyframes pulse-logo {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(0.98); }
+        }
+        .loader-bar {
+            width: 200px;
+            height: 3px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .loader-bar-inner {
+            height: 100%;
+            width: 0%;
+            background: var(--gradient-gold);
+            border-radius: 2px;
+            animation: load-bar 1.5s ease-in-out forwards;
+        }
+        @keyframes load-bar { to { width: 100%; } }
+
+        /* ===================== ANNOUNCEMENT TICKER ===================== */
+        .announcement-bar {
+            background: var(--gradient-primary);
+            padding: 10px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .announcement-bar::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='1' fill='rgba(255,255,255,0.05)'/%3E%3C/svg%3E");
+        }
+        .announcement-label {
+            background: var(--secondary);
+            color: var(--dark);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 14px;
+            border-radius: 20px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            flex-shrink: 0;
+            animation: glow-pulse 2s ease-in-out infinite;
+        }
+        @keyframes glow-pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(232,181,74,0.4); }
+            50% { box-shadow: 0 0 0 6px rgba(232,181,74,0); }
+        }
+        .announcement-text {
+            color: rgba(255,255,255,0.9);
+            font-size: 13px;
+            font-weight: 500;
+            white-space: nowrap;
+            animation: marquee-scroll 30s linear infinite;
+        }
+        .announcement-text a { color: var(--secondary); text-decoration: none; font-weight: 600; }
+        @keyframes marquee-scroll {
+            0% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+        .announcement-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            overflow: hidden;
+        }
+
+        /* ===================== NAVBAR ===================== */
+        .main-navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(26,58,107,0.08);
+            padding: 0 24px;
+            transition: var(--transition);
+            box-shadow: 0 2px 20px rgba(26,58,107,0.06);
+        }
+        .main-navbar.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+        .navbar-brand-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            padding: 12px 0;
+        }
+        .brand-logo-ring {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            padding: 3px;
+            flex-shrink: 0;
+        }
+        .brand-logo-ring img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+        .brand-text-wrap { display: flex; flex-direction: column; }
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+            letter-spacing: -0.5px;
+        }
+        .brand-tagline {
+            font-size: 9px;
+            font-weight: 600;
+            color: var(--muted);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-top: 3px;
+        }
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 4px;
+        }
+        .nav-menu .nav-link {
+            font-family: 'Poppins', sans-serif;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--text);
+            padding: 10px 16px;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            text-decoration: none;
+            letter-spacing: 0.2px;
+            position: relative;
+        }
+        .nav-menu .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-light);
+            border-radius: 2px;
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+        .nav-menu .nav-link:hover {
+            color: var(--primary);
+            background: rgba(37,99,235,0.06);
+        }
+        .nav-menu .nav-link:hover::after { width: 60%; }
+        .nav-menu .nav-link.active { color: var(--primary); }
+        .dropdown-menu-custom {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            min-width: 200px;
+            background: white;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            padding: 8px;
+            border: 1px solid rgba(26,58,107,0.08);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: var(--transition);
+            z-index: 100;
+        }
+        .nav-item-dropdown:hover .dropdown-menu-custom {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-menu-custom a {
+            display: block;
+            padding: 10px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text);
+            text-decoration: none;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+        }
+        .dropdown-menu-custom a:hover {
+            background: var(--light-bg);
+            color: var(--primary);
+            padding-left: 22px;
+        }
+        .nav-item-dropdown { position: relative; }
+        .dropdown-arrow {
+            font-size: 10px;
+            margin-left: 4px;
+            transition: transform 0.3s ease;
+        }
+        .nav-item-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
+        .btn-admission {
+            background: var(--gradient-primary);
+            color: white !important;
+            padding: 10px 22px !important;
+            border-radius: 50px !important;
+            font-size: 13px !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.3px;
+            box-shadow: 0 4px 15px rgba(37,99,235,0.35);
+            transition: var(--transition) !important;
+        }
+        .btn-admission:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37,99,235,0.45) !important;
+        }
+        .btn-admission::after { display: none !important; }
+        .navbar-toggler-btn {
+            border: none;
+            background: none;
+            width: 40px;
+            height: 40px;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            padding: 0;
+        }
+        .toggler-line {
+            width: 24px;
+            height: 2px;
+            background: var(--primary);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+        @media (max-width: 991px) {
+            .navbar-toggler-btn { display: flex; }
+            .nav-collapse {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 16px 24px;
+                border-bottom: 1px solid rgba(26,58,107,0.08);
+                box-shadow: var(--shadow-md);
+            }
+            .nav-collapse.show { display: block; }
+            .nav-menu { flex-direction: column; align-items: flex-start; }
+            .dropdown-menu-custom {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                padding: 0 0 0 16px;
+                border-radius: 0;
+            }
+        }
+
+        /* ===================== HERO SECTION ===================== */
+        .hero-section {
+            position: relative;
+            min-height: 92vh;
+            overflow: hidden;
+        }
+        .hero-slider {
+            position: relative;
+            width: 100%;
+            height: 92vh;
+        }
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1.2s ease, transform 1.2s ease;
+            transform: scale(1.05);
+        }
+        .hero-slide.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .hero-slide-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-hero);
+        }
+        .hero-content {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(232,181,74,0.15);
+            border: 1px solid rgba(232,181,74,0.4);
+            color: var(--secondary);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            font-weight: 800;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        .hero-title .highlight {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-subtitle {
+            font-size: clamp(1rem, 1.8vw, 1.2rem);
+            color: rgba(255,255,255,0.8);
+            max-width: 540px;
+            margin-bottom: 36px;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+        .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+        .hero-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient-gold);
+            color: var(--dark) !important;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 8px 30px rgba(232,181,74,0.4);
+            letter-spacing: 0.3px;
+        }
+        .hero-btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(232,181,74,0.55);
+        }
+        .hero-btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.1);
+            color: white !important;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: var(--transition);
+            border: 1.5px solid rgba(255,255,255,0.4);
+            backdrop-filter: blur(10px);
+        }
+        .hero-btn-secondary:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-3px);
+        }
+        .hero-stats {
+            position: absolute;
+            bottom: 48px;
+            left: 8%;
+            display: flex;
+            gap: 48px;
+        }
+        .hero-stat {
+            text-align: left;
+        }
+        .hero-stat-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: white;
+            line-height: 1;
+        }
+        .hero-stat-num span { color: var(--secondary); }
+        .hero-stat-label {
+            font-size: 12px;
+            color: rgba(255,255,255,0.6);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+        .hero-nav {
+            position: absolute;
+            bottom: 48px;
+            right: 8%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .hero-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+        .hero-dot.active {
+            background: var(--secondary);
+            transform: scale(1.4);
+        }
+        .hero-scroll-hint {
+            position: absolute;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            color: rgba(255,255,255,0.5);
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: bounce-hint 2s ease-in-out infinite;
+        }
+        @keyframes bounce-hint {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
+        }
+
+        /* ===================== SECTION STYLES ===================== */
+        .section-pad { padding: 100px 0; }
+        .section-pad-sm { padding: 60px 0; }
+
+        .section-header { text-align: center; margin-bottom: 64px; }
+        .section-eyebrow {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary-light);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            background: rgba(37,99,235,0.08);
+            padding: 6px 18px;
+            border-radius: 50px;
+            border: 1px solid rgba(37,99,235,0.15);
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--dark);
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .section-title .accent { color: var(--primary-light); }
+        .section-desc {
+            font-size: 1.05rem;
+            color: var(--muted);
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        .divider-line {
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-gold);
+            border-radius: 2px;
+            margin: 16px auto 0;
+        }
+
+        /* ===================== STATS BAR ===================== */
+        .stats-bar {
+            background: var(--gradient-primary);
+            position: relative;
+            overflow: hidden;
+        }
+        .stats-bar::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        .stat-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 30%;
+            height: 40%;
+            width: 1px;
+            background: rgba(255,255,255,0.15);
+        }
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            line-height: 1;
+        }
+        .stat-number .plus { color: var(--secondary); }
+        .stat-label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.7);
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 8px;
+        }
+
+        /* ===================== PRINCIPAL SECTION ===================== */
+        .principal-section { background: var(--light-bg); }
+        .principal-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+        .principal-img-col {
+            position: relative;
+            background: var(--gradient-primary);
+            min-height: 520px;
+            display: flex;
+            align-items: flex-end;
+            padding: 0;
+            overflow: hidden;
+        }
+        .principal-img-col::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -30%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+        .principal-img-col::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -20%;
+            width: 250px;
+            height: 250px;
+            background: rgba(232,181,74,0.08);
+            border-radius: 50%;
+        }
+        .principal-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .principal-name-badge {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(15,23,42,0.95) 0%, transparent 100%);
+            padding: 40px 32px 32px;
+        }
+        .principal-content { padding: 56px 56px 56px 48px; }
+        .quote-mark {
+            font-family: 'Playfair Display', serif;
+            font-size: 6rem;
+            color: rgba(37,99,235,0.1);
+            line-height: 1;
+            margin-bottom: -20px;
+        }
+        .principal-message {
+            font-size: 1.05rem;
+            color: var(--text);
+            line-height: 1.9;
+            margin-bottom: 24px;
+        }
+        .principal-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 32px;
+        }
+        .principal-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(26,58,107,0.06);
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+        .principal-list li:last-child { border-bottom: none; }
+        .principal-list li i {
+            color: var(--primary-light);
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+        .principal-info-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--light-bg);
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            border-left: 4px solid var(--primary-light);
+        }
+        .principal-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-light);
+            flex-shrink: 0;
+        }
+        .principal-info-name {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: var(--dark);
+            font-size: 1.05rem;
+        }
+        .principal-info-role {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--primary-light);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .principal-info-contact { font-size: 13px; color: var(--muted); margin-top: 4px; }
+        .principal-info-contact a { color: var(--primary-light); text-decoration: none; }
+
+        /* ===================== FACILITIES ===================== */
+        .facility-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 40px 32px;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(26,58,107,0.07);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        .facility-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+        .facility-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+            border-color: transparent;
+        }
+        .facility-card:hover::before { transform: scaleX(1); }
+        .facility-icon-wrap {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 1.8rem;
+            transition: var(--transition);
+        }
+        .facility-card:hover .facility-icon-wrap {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .facility-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+        .facility-desc {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        /* ===================== ADMISSION SECTION ===================== */
+        .admission-section {
+            background: var(--gradient-primary);
+            position: relative;
+            overflow: hidden;
+        }
+        .admission-section::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 50%;
+        }
+        .admission-section::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 400px;
+            height: 400px;
+            background: rgba(232,181,74,0.05);
+            border-radius: 50%;
+        }
+        .admission-content { position: relative; z-index: 2; }
+        .admission-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            color: white;
+            margin-bottom: 12px;
+        }
+        .admission-subtitle {
+            color: rgba(255,255,255,0.75);
+            font-size: 1rem;
+            margin-bottom: 36px;
+        }
+        .admission-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 40px;
+        }
+        .admission-checklist li {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            color: rgba(255,255,255,0.85);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .admission-checklist li:last-child { border-bottom: none; }
+        .check-icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: rgba(232,181,74,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+        .check-icon i { color: var(--secondary); font-size: 11px; }
+        .admission-cta-card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius-xl);
+            padding: 48px 40px;
+            text-align: center;
+        }
+        .cta-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            color: var(--dark);
+        }
+        .btn-gold {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient-gold);
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 15px;
+            padding: 16px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 8px 30px rgba(232,181,74,0.4);
+            letter-spacing: 0.3px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-gold:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(232,181,74,0.55);
+            color: var(--dark);
+        }
+
+        /* ===================== QUERY FORM ===================== */
+        .query-section { background: var(--light-bg); }
+        .form-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: 56px;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid rgba(26,58,107,0.07);
+        }
+        .form-group-custom { margin-bottom: 20px; }
+        .form-label-custom {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 8px;
+            display: block;
+            letter-spacing: 0.3px;
+        }
+        .form-input-custom {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1.5px solid rgba(26,58,107,0.12);
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: var(--light-bg);
+            transition: var(--transition);
+            outline: none;
+        }
+        .form-input-custom:focus {
+            border-color: var(--primary-light);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(37,99,235,0.08);
+        }
+        textarea.form-input-custom { height: 120px; resize: vertical; }
+        .btn-primary-custom {
+            width: 100%;
+            padding: 16px;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            letter-spacing: 0.3px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .btn-primary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37,99,235,0.35);
+        }
+
+        /* ===================== TOPPERS SECTION ===================== */
+        .toppers-section { background: white; }
+        .accordion-pro {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(26,58,107,0.08);
+        }
+        .accordion-pro-item { border-bottom: 1px solid rgba(26,58,107,0.07); }
+        .accordion-pro-item:last-child { border-bottom: none; }
+        .accordion-pro-btn {
+            width: 100%;
+            padding: 20px 32px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--dark);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: var(--transition);
+        }
+        .accordion-pro-btn:hover { background: var(--light-bg); color: var(--primary); }
+        .accordion-pro-btn.open { background: var(--gradient-primary); color: white; }
+        .accordion-pro-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(26,58,107,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+        .accordion-pro-btn.open .accordion-pro-icon {
+            border-color: rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.1);
+            transform: rotate(45deg);
+        }
+        .accordion-year-badge {
+            background: rgba(37,99,235,0.08);
+            color: var(--primary-light);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 1px;
+        }
+        .accordion-pro-btn.open .accordion-year-badge {
+            background: rgba(255,255,255,0.15);
+            color: white;
+        }
+        .accordion-pro-body {
+            display: none;
+            padding: 32px;
+            background: var(--light-bg);
+        }
+        .accordion-pro-body.show { display: block; }
+        .topper-img-wrap {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+        .topper-img-wrap img { width: 100%; height: auto; display: block; }
+
+        /* ===================== GALLERY PREVIEW ===================== */
+        .gallery-preview-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        .gallery-preview-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            aspect-ratio: 1;
+            position: relative;
+        }
+        .gallery-preview-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-preview-item:hover img { transform: scale(1.08); }
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(26,58,107,0.4) 0%, transparent 100%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        .gallery-preview-item:hover .gallery-overlay { opacity: 1; }
+
+        /* ===================== FOOTER ===================== */
+        .site-footer {
+            background: var(--dark);
+            color: rgba(255,255,255,0.7);
+        }
+        .footer-top { padding: 80px 0 60px; }
+        .footer-brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 6px;
+        }
+        .footer-brand-sub {
+            font-size: 12px;
+            color: var(--secondary);
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .footer-desc {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+            color: rgba(255,255,255,0.55);
+        }
+        .footer-social-links { display: flex; gap: 10px; }
+        .footer-social-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 15px;
+            transition: var(--transition);
+        }
+        .footer-social-btn:hover {
+            background: var(--primary-light);
+            border-color: var(--primary-light);
+            color: white;
+            transform: translateY(-3px);
+        }
+        .footer-heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 24px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 32px;
+            height: 2px;
+            background: var(--gradient-gold);
+            border-radius: 2px;
+        }
+        .footer-links { list-style: none; padding: 0; margin: 0; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a {
+            color: rgba(255,255,255,0.55);
+            text-decoration: none;
+            font-size: 14px;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .footer-links a::before {
+            content: '\f105';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 11px;
+            color: var(--secondary);
+            transition: var(--transition);
+        }
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 6px;
+        }
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: rgba(255,255,255,0.55);
+        }
+        .footer-contact-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: rgba(37,99,235,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--primary-light);
+            font-size: 13px;
+        }
+        .footer-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        .footer-gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 1;
+        }
+        .footer-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .footer-gallery-item:hover img { transform: scale(1.1); }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 24px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .footer-copyright {
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+        }
+        .footer-copyright a { color: var(--secondary); text-decoration: none; }
+        .footer-bottom-links { display: flex; gap: 24px; }
+        .footer-bottom-links a {
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-bottom-links a:hover { color: var(--secondary); }
+
+        /* ===================== BACK TO TOP ===================== */
+        .back-to-top-btn {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: var(--transition);
+            box-shadow: var(--shadow-md);
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .back-to-top-btn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .back-to-top-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            color: white;
+        }
+
+        /* ===================== BOTTOM TICKER ===================== */
+        .bottom-ticker {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, #c0392b 0%, #e74c3c 100%);
+            height: 36px;
+            overflow: hidden;
+        }
+        .bottom-ticker-label {
+            padding: 0 18px;
+            background: #922b21;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 11px;
+            font-weight: 800;
+            color: white;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            flex-shrink: 0;
+            clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%);
+            padding-right: 30px;
+        }
+        .bottom-ticker-content {
+            flex: 1;
+            overflow: hidden;
+        }
+        .bottom-ticker-scroll {
+            display: flex;
+            gap: 80px;
+            white-space: nowrap;
+            animation: ticker-scroll 20s linear infinite;
+            font-size: 12.5px;
+            color: white;
+            font-weight: 500;
+        }
+        @keyframes ticker-scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .ticker-bullet {
+            color: rgba(255,255,255,0.5);
+            margin-right: 6px;
+        }
+
+        /* ===================== RESPONSIVE ===================== */
+        @media (max-width: 768px) {
+            .hero-section { min-height: 70vh; }
+            .hero-slider { height: 70vh; }
+            .hero-content { padding: 0 5%; }
+            .hero-stats { display: none; }
+            .hero-nav { right: 5%; bottom: 32px; }
+            .principal-content { padding: 36px 28px; }
+            .form-card { padding: 32px 24px; }
+            .gallery-preview-grid { grid-template-columns: repeat(2, 1fr); }
+            .section-pad { padding: 60px 0; }
+            .stat-item:not(:last-child)::after { display: none; }
+        }
+
+        /* ===================== ANIMATIONS ===================== */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .fade-up-delay-1 { transition-delay: 0.1s; }
+        .fade-up-delay-2 { transition-delay: 0.2s; }
+        .fade-up-delay-3 { transition-delay: 0.3s; }
+        .fade-up-delay-4 { transition-delay: 0.4s; }
     </style>
 </head>
 
 <body onload="displayDate()">
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-inner">
+            <div class="loader-logo">NBSS</div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;">Shukulpur</div>
+            <div class="loader-bar">
+                <div class="loader-bar-inner"></div>
             </div>
         </div>
-        <!-- Spinner End -->
+    </div>
 
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        <div class="container">
+            <div class="announcement-wrapper">
+                <span class="announcement-label">📢 Notice</span>
+                <div style="overflow:hidden;flex:1">
+                    <div class="announcement-text">
+                        <img src="https://nbss.co.in/img/33.gif" style="width:16px;height:16px;margin-right:8px;vertical-align:middle;" alt="">
+                        Thought of the Day (<span id="current-date">loading...</span>): <strong><span id="thought" style="color:#ffd700">Loading...</span></strong>
+                        &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+                        Admissions Open for Session 2024-25 — Classes LKG to IXth
+                        &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+                        Contact Principal: <a href="tel:+919794491737">+91 9794491737</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="#" class="navbar-brand">
-                <h1 class="m-0 text-primary animated slideInLeft"><img style="width: 3rem; height: 2.8rem" src="https://nbss.co.in/img/nbsslogo.jpg"></i>NBSS</h1>
+    <!-- NAVBAR -->
+    <nav class="main-navbar" id="mainNavbar">
+        <div class="container d-flex align-items-center justify-content-between" style="max-width:1280px">
+            <a href="#" class="navbar-brand-wrap">
+                <div class="brand-logo-ring">
+                    <img src="https://nbss.co.in/img/nbsslogo.jpg" alt="NBSS Logo">
+                </div>
+                <div class="brand-text-wrap">
+                    <span class="brand-name">NBSS</span>
+                    <span class="brand-tagline">Est. 2011 · CBSE Affiliated</span>
+                </div>
             </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+
+            <button class="navbar-toggler-btn" id="navToggler" aria-label="Toggle navigation">
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto">
-                    <!-- <a href="index.html" class="nav-item nav-link active">Home</a> -->
-                    <a href="about" class="nav-item nav-link">About</a>
-                    
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Message</a>
-                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                            <a href="chairman" class="dropdown-item">Chairman Message</a>
-                            <a href="manager" class="dropdown-item">Manager Message</a>
-                            <a href="pricipal" class="dropdown-item">Principal Message</a>
+
+            <div class="nav-collapse" id="navCollapse">
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="#" class="nav-link">Message <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <div class="dropdown-menu-custom">
+                            <a href="chairman">Chairman's Message</a>
+                            <a href="manager">Manager's Message</a>
+                            <a href="pricipal">Principal's Message</a>
                         </div>
-                    </div>
-                    <a href="gallery" class="nav-item nav-link">Photos</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Login</a>
-                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                            <a href="admin" class="dropdown-item">Admin Login</a>
-                            <a href="teacher" class="dropdown-item">Teachers' Login</a>
-                            <a href="student" class="dropdown-item">Students' login</a>
+                    </li>
+                    <li><a href="gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="#" class="nav-link">Login <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <div class="dropdown-menu-custom">
+                            <a href="admin">Admin Login</a>
+                            <a href="teacher">Teachers' Login</a>
+                            <a href="student">Students' Login</a>
                         </div>
-                    </div>
-                    <a href="#contact" class="nav-item nav-link">Contact Us</a>
-                </div>
-                <a href="admission" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Admission<i class="fa fa-arrow-right ms-3"></i></a>
+                    </li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" class="nav-link btn-admission">
+                            Apply Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!-- Navbar End -->
+        </div>
+    </nav>
 
-        <marquee id="m5" behavior="RIGHT" scrollamount="7" scrolldelay="10" scrollspeed="3000" onmouseout="this.start()+10;" onmouseover="this.stop();" style="border-width: 0px; border-style: solid; width: 100%;">
-            <img id="ctl00_Repeater1_ctl00_Image1" src="https://nbss.co.in/img/33.gif" style="width:22px;border-width:0px;">&nbsp;
-            <a id="ctl00_Repeater1_ctl00_HyperLink3" href="#" target="_blank" style="color:Red;font-size:15px;font-weight:bold;">Thought of the day (<span id="current-date"></span>): <span id="thought">Loading...</span></a>
-            </marquee>
-
-        <!-- Carousel Start -->
-        <div class="container-fluid p-0 mb-5">
-            <div class="owl-carousel header-carousel position-relative">
-                <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="https://nbss.co.in/img/5.jpg" alt="nbss school">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="display-3  animated slideInDown mb-2" style="color: #17eadc;" >NBSS</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Nirmala Brijendra Shikshan Sansthan <br>Shukulpur, Sangipur, PBH-230139</p>
-                                    <a target="_blank"  href="https://wa.me/919794491737?text=Hi%20Sir😀" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInRight">Proceed for Admission<i class="fa fa-arrow-right ms-3"></i></a>
-                                    <!-- <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a> -->
-                                </div>
-                            </div>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <div class="hero-slider" id="heroSlider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active" id="slide-0">
+                <img class="hero-slide-img" src="https://nbss.co.in/img/5.jpg" alt="NBSS School Campus">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div style="max-width:680px">
+                        <div class="hero-badge">
+                            <i class="fas fa-star" style="font-size:10px"></i>
+                            CBSE English Medium School
+                        </div>
+                        <h1 class="hero-title">
+                            Welcome to <span class="highlight">NBSS</span><br>Shukulpur
+                        </h1>
+                        <p class="hero-subtitle">
+                            Nirmala Brijendra Shikshan Sansthan — Shaping brilliant futures through academic excellence, character formation, and holistic development since 2011.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" class="hero-btn-primary">
+                                <i class="fab fa-whatsapp"></i> Apply for Admission
+                            </a>
+                            <a href="#about" class="hero-btn-secondary">
+                                <i class="fas fa-play-circle"></i> Discover More
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="https://nbss.co.in/img/3.jpg" alt="">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future For Your Child</h1>
-                                    <!-- <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p> -->
-                                    <!-- <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Proceed for Admission</a> -->
-                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">About Us<i class="fa fa-arrow-right ms-3"></i></a>
-                                </div>
-                            </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-slide" id="slide-1">
+                <img class="hero-slide-img" src="https://nbss.co.in/img/3.jpg" alt="NBSS Students">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div style="max-width:680px">
+                        <div class="hero-badge">
+                            <i class="fas fa-graduation-cap" style="font-size:10px"></i>
+                            Academic Excellence
+                        </div>
+                        <h1 class="hero-title">
+                            Make A <span class="highlight">Brighter Future</span><br>For Your Child
+                        </h1>
+                        <p class="hero-subtitle">
+                            At NBSS, every child is nurtured to reach their fullest potential in a disciplined, value-driven environment enriched with modern facilities.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" class="hero-btn-primary">
+                                <i class="fas fa-arrow-right"></i> Get In Touch
+                            </a>
+                            <a href="#facilities" class="hero-btn-secondary">
+                                <i class="fas fa-school"></i> Our Facilities
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="https://nbss.co.in/img/17.jpg" alt="">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="display-2 text-white animated slideInDown mb-4">The Best Kindergarten School For Your Child</h1>
-                                    <!-- <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p> -->
-                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank"  class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Proceed for Admission<i class="fa fa-arrow-right ms-3"></i></a>
-                                    <!-- <a href="" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Classes</a> -->
-                                </div>
-                            </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="hero-slide" id="slide-2">
+                <img class="hero-slide-img" src="https://nbss.co.in/img/17.jpg" alt="NBSS Toppers">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div style="max-width:680px">
+                        <div class="hero-badge">
+                            <i class="fas fa-trophy" style="font-size:10px"></i>
+                            Board Toppers Every Year
+                        </div>
+                        <h1 class="hero-title">
+                            The Best School<br>For Your <span class="highlight">Child's Growth</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            From kindergarten to Class X, NBSS provides a strong academic foundation with co-curricular activities for all-round development.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="admission" class="hero-btn-primary">
+                                <i class="fas fa-file-alt"></i> Admission 2024-25
+                            </a>
+                            <a href="#toppers" class="hero-btn-secondary">
+                                <i class="fas fa-award"></i> View Toppers
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <!-- Hero Stats -->
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-num">13<span>+</span></div>
+                    <div class="hero-stat-label">Years of Excellence</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num">500<span>+</span></div>
+                    <div class="hero-stat-label">Students Enrolled</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num">30<span>+</span></div>
+                    <div class="hero-stat-label">Expert Faculty</div>
+                </div>
+            </div>
 
-                <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="https://nbss.co.in/img/2.jpg" alt="">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future For Your Child</h1>
-                                    <!-- <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p> -->
-                                    <!-- <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Proceed for Admission</a> -->
-                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank"  class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">About Us<i class="fa fa-arrow-right ms-3"></i></a>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Slide Dots -->
+            <div class="hero-nav">
+                <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+                <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+                <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">2011<span></span></div>
+                        <div class="stat-label">Established</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">100<span class="plus">%</span></div>
+                        <div class="stat-label">Board Results</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">LKG<span></span></div>
+                        <div class="stat-label">to Class X</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">CBSE<span></span></div>
+                        <div class="stat-label">Affiliated Board</div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Carousel End -->
+    </div>
 
-        <div class="">
-            <div class="ticker">
-                <div class="news-title">
-                    <h5>Announcements</h5>
-                </div>
-                <div class="news">
-                    <marquee class="news-content">
-                        <p>Admission for batch 2024-25 are opened from class LKG to IXth std.</p>
-                    </marquee>
-                </div>
+    <!-- PRINCIPAL MESSAGE -->
+    <section class="principal-section section-pad" id="about">
+        <div class="container" style="max-width:1200px">
+            <div class="section-header fade-up">
+                <span class="section-eyebrow">Leadership</span>
+                <h2 class="section-title">From the <span class="accent">Principal's Desk</span></h2>
+                <div class="divider-line"></div>
             </div>
-        </div>
 
+            <div class="principal-card fade-up">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <div class="principal-img-col">
+                            <img src="https://nbss.co.in/img/5.jpg" alt="Principal NBSS" class="principal-photo">
+                            <div class="principal-name-badge">
+                                <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:white;margin-bottom:4px">Mr. Anuj Shukla</div>
+                                <div style="font-size:12px;color:rgba(255,255,255,0.6);font-weight:600;letter-spacing:1.5px;text-transform:uppercase">Principal, NBSS Shukulpur</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="principal-content">
+                            <div class="quote-mark">"</div>
+                            <span class="section-eyebrow" style="margin-bottom:16px">Message</span>
+                            <h3 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:20px;color:var(--dark)">My Dear Well Wishers,</h3>
 
-        <!-- About Start -->
-        <div class="container-xxl ">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-4">Message from Principal's Desk</h1>
-                        <p class=" animated slideInDown"><em><strong>My Dear Well Wishers,</strong></em></p>
-                        <p>Welcome to the corridors of NBSS Shukulpur to find the wards making their best, in school life. NBSS, Shukulpur , CBSE Board English Medium School, is situated in the heart of Shukulpur with a spacious campus. The School,  in 2011. The School stands for academic excellence, development of skills and character formation. NBSS family with her efficient & committed staff sees that every child, who enters the campus grows fully to a fine human being, It ia agreat pleasure to record that the dream establishment of NBSS is envisioned to discover education different from current methodolgy to be more self- directed , individualized , interceptive, experience-based and injury-oriented for example.</p>
-                        <p>The students, who pass out from the portals of N.B.S.S. , shine in every field outside, as they are strongly founded on the value based quality education. Students at NBSS have ample opportunity to prove their mettle in bringing out the best of talents in them. Success and prosperity is possible, only when the things are done in a disciplined manner. Thus discipline is the backbone of NBSS&#8217; School. The whole school is divided into four houses, the staff as animators to help out the students to stand tall in taking up responsibility for the welfare of the school and of every individual. Various competitions, celebration of major festivals of all religions and National festivals, keep the inmates in the spirit of national integration.The school has two terms -- April to September &amp; October to March with one unit test before the half yearly and one before the final examination to bring out the best of results in their respective classes and the board examination.</p>
-                    
-                        <ul class="listing">
-                            <li><em>Parent teacher meeting is held in every month for a vivid interaction with parents and teachers.</em></li>
-                            <li><em>Remedial classes are arranged for the weaker / slow learners.</em></li>
-                            <li><em>Orientation <span data-scayt_word="programmes" data-scaytid="24">programmes</span> are held for the staff members to be more effective in guiding their wards.</em></li>
+                            <p class="principal-message">
+                                Welcome to the corridors of <strong>NBSS Shukulpur</strong>. Our CBSE Board English Medium School, situated in the heart of Shukulpur with a spacious campus, stands as a beacon of academic excellence, skill development, and character formation since its founding in 2011.
+                            </p>
+                            <p class="principal-message">
+                                The NBSS family — with our efficient and committed staff — ensures that every child who enters our campus grows fully into a fine human being. We envision education that is self-directed, individualized, experience-based, and growth-oriented.
+                            </p>
+                            <p class="principal-message" style="margin-bottom:28px">
+                                Students at NBSS have ample opportunity to prove their mettle across curricular and co-curricular activities. Discipline is the backbone of NBSS, while the spirit of national integration is kept alive through our four houses, festivals, and competitions.
+                            </p>
+
+                            <ul class="principal-list">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Parent-teacher meetings held every month for continuous interaction</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Remedial classes arranged for weaker learners to ensure no child is left behind</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Regular orientation programmes for staff members to enhance teaching effectiveness</span>
+                                </li>
                             </ul>
 
-                            <p><em>Smt.  <span data-scayt_word="Isidore" data-scaytid="25">Mamta Tripathi</span>,Chairman of the <span data-scayt_word="NBSS " data-scaytid="22"> School </span>and Mr. Ajay Shukla, <span data-scayt_word="Fr" data-scaytid="45">Manager</span> of the school are guiding to achieve the highest excellence in both curricular and co-curricular activities, thanks to their regular and timely guidance and support.</em></p>
-                       
-               
-                    
-
-                     <div class="row g-4 align-items-center">
-                            <!-- <div class="col-sm-6">
-                                <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
-                            </div> -->
-                            <div class="col-sm-12">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle flex-shrink-0" src="https://nbss.co.in/img/principal.jpg" alt="nbss principal" style="width: 90px; height: 90px; margin-right: 20px;">
-                                    <div class="ms-6">
-                                        <h6 class="text-primary mb-1"><br>Mr. Anuj Shukla</h6>
-                                        <small>Principal</small>
-                                        <p style="font-size: 15px;">Contact: <a href="#">principal@nbss.co.in</a> | <a href="#">(+91) 9794491737</a></p>
-                                        <!-- <p style="font-size: 15px;"></p> -->
-
+                            <div class="principal-info-card">
+                                <img src="https://nbss.co.in/img/principal.jpg" alt="Mr. Anuj Shukla" class="principal-avatar">
+                                <div>
+                                    <div class="principal-info-role">Principal</div>
+                                    <div class="principal-info-name">Mr. Anuj Shukla</div>
+                                    <div class="principal-info-contact">
+                                        <a href="mailto:principal@nbss.co.in"><i class="fas fa-envelope me-1"></i>principal@nbss.co.in</a>
+                                        &nbsp;·&nbsp;
+                                        <a href="tel:+919794491737"><i class="fas fa-phone me-1"></i>(+91) 97944 91737</a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACILITIES -->
+    <section class="section-pad" id="facilities" style="background:white">
+        <div class="container" style="max-width:1200px">
+            <div class="section-header fade-up">
+                <span class="section-eyebrow">Infrastructure</span>
+                <h2 class="section-title">World-Class <span class="accent">School Facilities</span></h2>
+                <p class="section-desc">NBSS provides best-in-class facilities for the holistic growth of every student — academically, physically, and creatively.</p>
+                <div class="divider-line"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-1">
+                    <div class="facility-card">
+                        <div class="facility-icon-wrap" style="background:rgba(37,99,235,0.1)">
+                            <i class="fas fa-flask" style="color:#2563eb"></i>
+                        </div>
+                        <h4 class="facility-title">Science Labs</h4>
+                        <p class="facility-desc">Fully equipped science laboratories for practical learning with live experiments and modern equipment.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-2">
+                    <div class="facility-card">
+                        <div class="facility-icon-wrap" style="background:rgba(22,163,74,0.1)">
+                            <i class="fas fa-futbol" style="color:#16a34a"></i>
+                        </div>
+                        <h4 class="facility-title">Playground</h4>
+                        <p class="facility-desc">Spacious playground area supporting all co-curricular sports activities and physical development.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-3">
+                    <div class="facility-card">
+                        <div class="facility-icon-wrap" style="background:rgba(217,119,6,0.1)">
+                            <i class="fas fa-desktop" style="color:#d97706"></i>
+                        </div>
+                        <h4 class="facility-title">Computer Lab</h4>
+                        <p class="facility-desc">Modern computer lab equipped with trending software and applications for digital literacy.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-4">
+                    <div class="facility-card">
+                        <div class="facility-icon-wrap" style="background:rgba(220,38,38,0.1)">
+                            <i class="fas fa-music" style="color:#dc2626"></i>
+                        </div>
+                        <h4 class="facility-title">Music Classes</h4>
+                        <p class="facility-desc">NBSS offers comprehensive musical education with instruments and expert instructors for all students.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-1">
+                    <div class="facility-card">
+                        <div class="facility-icon-wrap" style="background:rgba(124,58,237,0.1)">
+                            <i class="fas fa-book-open" style="color:#7c3aed"></i>
+                        </div>
+                        <h4 class="facility-title">Library</h4>
+                        <p class="facility-desc">Well-stocked library with a vast collection of books, encyclopedias, and educational resources.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-2">
+                    <div class="facility-card">
+                        <div class="facility-icon-wrap" style="background:rgba(5,150,105,0.1)">
+                            <i class="fas fa-chalkboard-teacher" style="color:#059669"></i>
+                        </div>
+                        <h4 class="facility-title">Smart Classes</h4>
+                        <p class="facility-desc">Interactive digital classrooms with smart boards for an engaging and modern learning experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-3">
+                    <div class="facility-card">
+                        <div class="facility-icon-wrap" style="background:rgba(219,39,119,0.1)">
+                            <i class="fas fa-paint-brush" style="color:#db2777"></i>
+                        </div>
+                        <h4 class="facility-title">Art & Craft</h4>
+                        <p class="facility-desc">Dedicated art room fostering creativity and artistic expression in children from an early age.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 fade-up fade-up-delay-4">
+                    <div class="facility-card">
+                        <div class="facility-icon-wrap" style="background:rgba(14,165,233,0.1)">
+                            <i class="fas fa-bus" style="color:#0ea5e9"></i>
+                        </div>
+                        <h4 class="facility-title">Transport</h4>
+                        <p class="facility-desc">Safe and reliable school transport covering major routes, ensuring every child reaches safely.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMISSION SECTION -->
+    <section class="admission-section section-pad" id="admission">
+        <div class="container admission-content" style="max-width:1200px">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7">
+                    <span class="section-eyebrow" style="background:rgba(232,181,74,0.15);border-color:rgba(232,181,74,0.4);color:var(--secondary)">Admissions 2024-25</span>
+                    <h2 class="admission-title" style="margin-top:16px">
+                        Application for Admission<br>in Session <span style="background:var(--gradient-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">2024-25</span>
+                    </h2>
+                    <p class="admission-subtitle">Seats are limited. Apply early to secure your child's place at NBSS Shukulpur.</p>
+
+                    <ul class="admission-checklist">
+                        <li>
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <span>The guardian responsible for the child must personally introduce every candidate to the Principal for admission.</span>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <span>New admissions are subject to availability of seats. Admission is strictly on merit basis.</span>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <span>Students from recognized schools must present the original Leaving/Transfer Certificate.</span>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <span>Transfer Certificates from outside the state must be countersigned by the state's inspecting authority.</span>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <span>No special references or recommendations will be entertained. Admissions are through proper channels only.</span>
+                        </li>
+                        <li>
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <span>The school management reserves the right to admit or retain students in the school.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="admission-cta-card">
+                        <div class="cta-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:800;color:white;margin-bottom:12px">Ready to Join NBSS?</h3>
+                        <p style="color:rgba(255,255,255,0.65);font-size:14px;margin-bottom:28px;line-height:1.7">Admission for Classes LKG to IXth are now open. Contact us via WhatsApp for instant response and guidance.</p>
+                        <div style="display:flex;flex-direction:column;gap:12px">
+                            <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" class="btn-gold" style="justify-content:center">
+                                <i class="fab fa-whatsapp" style="font-size:18px"></i> Apply via WhatsApp
+                            </a>
+                            <a href="tel:+919794491737" style="display:flex;align-items:center;justify-content:center;gap:10px;color:rgba(255,255,255,0.65);font-size:14px;text-decoration:none;padding:10px">
+                                <i class="fas fa-phone"></i> +91 97944 91737
+                            </a>
+                        </div>
+                        <div style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1)">
+                            <div style="font-size:12px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px">Available Classes</div>
+                            <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center">
+                                <span style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">LKG</span>
+                                <span style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">UKG</span>
+                                <span style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">I - V</span>
+                                <span style="background:rgba(255,255,255,0.1);color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600">VI - IX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUERY FORM -->
+    <section class="query-section section-pad" id="contact">
+        <div class="container" style="max-width:1200px">
+            <div class="section-header fade-up">
+                <span class="section-eyebrow">Get In Touch</span>
+                <h2 class="section-title">Have Any <span class="accent">Query?</span></h2>
+                <p class="section-desc">Fill out the form below and we'll get back to you as soon as possible. You can also reach us directly on WhatsApp.</p>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-5 fade-up fade-up-delay-1">
+                    <div style="margin-bottom:32px">
+                        <h3 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:800;color:var(--dark);margin-bottom:8px">We'd Love to Hear From You</h3>
+                        <p style="color:var(--muted);font-size:0.95rem;line-height:1.8">Whether it's about admissions, academics, or school programs — our team is ready to answer all your questions.</p>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:16px">
+                        <div class="footer-contact-item" style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
+                            <div class="footer-contact-icon" style="background:rgba(26,58,107,0.08);color:var(--primary)"><i class="fas fa-map-marker-alt"></i></div>
                             <div>
-                          </div>
+                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">Address</div>
+                                <div style="font-size:13px;color:var(--muted)">Shukulpur, Sangipur<br>Pratapgarh — 230139, UP</div>
                             </div>
                         </div>
-                    </div>
-                    <!-- <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/about-1.jpg" alt="">
-                            </div>
-                            <div class="col-6 text-start" style="margin-top: -150px;">
-                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-2.jpg" alt="">
-                            </div>
-                            <div class="col-6 text-end" style="margin-top: -150px;">
-                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-3.jpg" alt="">
+                        <div class="footer-contact-item" style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
+                            <div class="footer-contact-icon" style="background:rgba(26,58,107,0.08);color:var(--primary)"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">Phone</div>
+                                <a href="tel:+919794491737" style="font-size:13px;color:var(--primary-light);text-decoration:none;font-weight:600">+91 97944 91737</a>
                             </div>
                         </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-        
-        <!-- Call To Action Start -->
-        <div class="container-xxl ">
-            <div class="container">
-                <div class="bg-light rounded">
-                    <div class="row g-0">
-                       
-                        <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4">Application for Admission in Session 2024-25 Intake</h1>
-                                <ul class="list-inline m-0">
-                                    <li class="py-2"><i class="fa fa-check text-success mr-3"></i>One who will be responsible to the Principal for the child must introduce every candidate for admission in person. 
-                                       </li>
-                                    <li class="py-2"><i class="fa fa-check text-success mr-3"></i>New admissions will be made subject to availability of seats.</li>
-                                    <li class="py-2"><i class="fa fa-check text-success mr-3"></i> Students coming from recognized schools will not be admitted without the original Leaving Certificate from that school.</li>
-                                    <li class="py-2"><i class="fa fa-check text-success mr-3"></i>One who will be responsible to the Principal for the child must introduce every candidate for admission in person. 
-                                    </li>
-                                    <li class="py-2"><i class="fa fa-check text-success mr-3"></i>If they come from a recognized school outside the State they shall have their Leaving Certificate counter- signed by the inspecting authority of that State. (Transfer Certificate) 
-                                    </li>
-                                    <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Pupils will be given admission only through proper channels. No special reference or recommendation will be entertained or considered.
-                                    </li>
-                                    <li class="py-2"><i class="fa fa-check text-success mr-3"></i>The school management reserves the right to admit or retain students in the school.
-                                    </li>
-                                   
-                                  
-                                </ul>
-                                <a class="btn btn-primary py-3 px-5" target="_blank"  href="https://wa.me/919794491737?text=Hi%20Sir😀">Click Here to Apply Now<i class="fa fa-arrow-right ms-2"></i></a>
+                        <div class="footer-contact-item" style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
+                            <div class="footer-contact-icon" style="background:rgba(26,58,107,0.08);color:var(--primary)"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">Email</div>
+                                <a href="mailto:info@nbss.co.in" style="font-size:13px;color:var(--primary-light);text-decoration:none;font-weight:600">info@nbss.co.in</a>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item" style="margin:0;background:white;padding:18px 20px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm)">
+                            <div class="footer-contact-icon" style="background:rgba(22,163,74,0.08);color:#16a34a"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <div style="font-weight:600;color:var(--dark);font-size:14px;margin-bottom:4px">WhatsApp</div>
+                                <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" style="font-size:13px;color:#16a34a;text-decoration:none;font-weight:600">Chat with Us Directly</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Call To Action End -->
-
-
-
-   <!-- Facilities Start -->
-   <div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h1 class="mb-3">School Facilities</h1>
-            <!-- <p>NBSS Provides best class facilities for overall begrowth for all our students. </p> -->
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="facility-item">
-                    <div class="facility-icon bg-primary">
-                        <span class="bg-primary"></span>
-                        <i class="fa fa-chalkboard-teacher fa-3x text-primary"></i>
-                        <span class="bg-primary"></span>
-                    </div>
-                    <div class="facility-text bg-primary">
-                        <h3 class="text-primary mb-3">Science Labs</h3>
-                        <p class="mb-0">Practical Science learning with live experiments</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="facility-item">
-                    <div class="facility-icon bg-success">
-                        <span class="bg-success"></span>
-                        <i class="fa fa-futbol fa-3x text-success"></i>
-                        <span class="bg-success"></span>
-                    </div>
-                    <div class="facility-text bg-success">
-                        <h3 class="text-success mb-3">Playground</h3>
-                        <p class="mb-0">Plaground area for all co-activities.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="facility-item">
-                    <div class="facility-icon bg-warning">
-                        <span class="bg-warning"></span>
-                        <i class="fa fa-home fa-3x text-warning"></i>
-                        <span class="bg-warning"></span>
-                    </div>
-                    <div class="facility-text bg-warning">
-                        <h3 class="text-warning mb-3">Computer Classes</h3>
-                        <p class="mb-0">Computer lab fledged with advanced trending softwares/apps.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="facility-item">
-                    <div class="facility-icon bg-info">
-                        <span class="bg-info"></span>
-                        <i class="fa fa-chalkboard-teacher fa-3x text-info"></i>
-                        <span class="bg-info"></span>
-                    </div>
-                    <div class="facility-text bg-info">
-                        <h3 class="text-info mb-3">Music Learning</h3>
-                        <p class="mb-0">NBSS offers all musical classes & equipments for students.</p>
+                <div class="col-lg-7 fade-up fade-up-delay-2">
+                    <div class="form-card">
+                        <h4 style="font-family:'Poppins',sans-serif;font-weight:700;color:var(--dark);margin-bottom:24px;font-size:1.2rem">Send Us a Message</h4>
+                        <form onsubmit="return false;">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-group-custom">
+                                        <label class="form-label-custom" for="qName">Guardian's Name</label>
+                                        <input type="text" class="form-input-custom" id="qName" placeholder="Enter full name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group-custom">
+                                        <label class="form-label-custom" for="qPhone">Mobile Number</label>
+                                        <input type="tel" class="form-input-custom" id="qPhone" placeholder="+91 00000 00000">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group-custom">
+                                        <label class="form-label-custom" for="qEmail">Email Address</label>
+                                        <input type="email" class="form-input-custom" id="qEmail" placeholder="your@email.com">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group-custom">
+                                        <label class="form-label-custom" for="qRoll">Student's Roll Number (if existing student)</label>
+                                        <input type="text" class="form-input-custom" id="qRoll" placeholder="Enter roll number or N/A">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group-custom">
+                                        <label class="form-label-custom" for="qMessage">Your Message</label>
+                                        <textarea class="form-input-custom" id="qMessage" placeholder="Describe your query or requirement..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" style="display:block;width:100%">
+                                        <button type="button" class="btn-primary-custom">
+                                            <i class="fab fa-whatsapp me-2"></i> Send via WhatsApp
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Facilities End -->
+    </section>
 
-<!-- 
-
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">School Classes</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-1.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Art & Drawing</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/NBSS.png" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
-                                            <small>Teacher</small>
-                                        </div>
-                                    </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
-                                </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>3-5 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>9-10 AM</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Capacity:</h6>
-                                            <small>30 Kids</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-2.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Color Management</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/NBSS.png" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
-                                            <small>Teacher</small>
-                                        </div>
-                                    </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
-                                </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>3-5 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>9-10 AM</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Capacity:</h6>
-                                            <small>30 Kids</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-3.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Athletic & Dance</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/NBSS.png" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
-                                            <small>Teacher</small>
-                                        </div>
-                                    </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
-                                </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>3-5 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>9-10 AM</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Capacity:</h6>
-                                            <small>30 Kids</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-4.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Language & Speaking</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/NBSS.png" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
-                                            <small>Teacher</small>
-                                        </div>
-                                    </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
-                                </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>3-5 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>9-10 AM</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Capacity:</h6>
-                                            <small>30 Kids</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-5.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Religion & History</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/NBSS.png" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
-                                            <small>Teacher</small>
-                                        </div>
-                                    </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
-                                </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>3-5 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>9-10 AM</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Capacity:</h6>
-                                            <small>30 Kids</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" src="img/classes-6.jpg" alt="">
-                            </div>
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">General Knowledge</a>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <div class="d-flex align-items-center">
-                                        <img class="rounded-circle flex-shrink-0" src="img/NBSS.png" alt="" style="width: 45px; height: 45px;">
-                                        <div class="ms-3">
-                                            <h6 class="text-primary mb-1">Jhon Doe</h6>
-                                            <small>Teacher</small>
-                                        </div>
-                                    </div>
-                                    <span class="bg-primary text-white rounded-pill py-2 px-3" href="">$99</span>
-                                </div>
-                                <div class="row g-1">
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-primary pt-2">
-                                            <h6 class="text-primary mb-1">Age:</h6>
-                                            <small>3-5 Years</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-success pt-2">
-                                            <h6 class="text-success mb-1">Time:</h6>
-                                            <small>9-10 AM</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="border-top border-3 border-warning pt-2">
-                                            <h6 class="text-warning mb-1">Capacity:</h6>
-                                            <small>30 Kids</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- BOARD TOPPERS -->
+    <section class="toppers-section section-pad" id="toppers">
+        <div class="container" style="max-width:900px">
+            <div class="section-header fade-up">
+                <span class="section-eyebrow">Academic Achievement</span>
+                <h2 class="section-title">NBSS Board <span class="accent">Toppers</span></h2>
+                <p class="section-desc">Celebrating the brilliant students who have made NBSS proud year after year in the CBSE Board Examinations.</p>
+                <div class="divider-line"></div>
             </div>
-        </div> -->
-        <!-- Classes End -->
 
-
-        <!-- Appointment Start -->
-        <div class="container-xxl">
-            <div class="container">
-                <div class="bg-light rounded">
-                    <div class="row g-0">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 >Have Any Query!!</h1>
-                                <hp class="mb-4">Want callback from us?</hp>
-                                <form>
-                                    <div class="row g-3">
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                                <label for="gname">Name</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
-                                                <label for="cage">Mobile No</label>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="col-sm-12">
-                                            <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
-                                                <label for="gmail">Email</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                                <label for="cname">Student's Roll Number</label>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                                <label for="message">Message</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                           <a href="https://wa.me/919794491737?text=Hi%20Sir😀" target="_blank" > <button class="btn btn-primary w-100 py-3" type="submit">Submit</button> </a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+            <div class="accordion-pro fade-up">
+                <div class="accordion-pro-item">
+                    <button class="accordion-pro-btn open" id="acc-btn-2024" onclick="toggleAccordion('2024')">
+                        <div style="display:flex;align-items:center;gap:16px">
+                            <span class="accordion-year-badge">2024</span>
+                            <span>🏆 NBSS Xth Board Toppers — 2024</span>
                         </div>
-                        <!-- <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/appointment.jpg" style="object-fit: cover;">
-                            </div>
-                        </div> -->
+                        <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="accordion-pro-body show" id="acc-body-2024">
+                        <div class="topper-img-wrap">
+                            <img src="https://nbss.co.in/img/17.jpg" alt="NBSS Toppers 2024" style="border-radius:var(--radius-md)">
+                        </div>
+                        <p style="margin-top:16px;color:var(--muted);font-size:14px;text-align:center">Class X Board Toppers — Batch 2024</p>
+                    </div>
+                </div>
+
+                <div class="accordion-pro-item">
+                    <button class="accordion-pro-btn" id="acc-btn-2023" onclick="toggleAccordion('2023')">
+                        <div style="display:flex;align-items:center;gap:16px">
+                            <span class="accordion-year-badge">2023</span>
+                            <span>NBSS Xth Board Toppers — 2023</span>
+                        </div>
+                        <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="accordion-pro-body" id="acc-body-2023">
+                        <div style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
+                            <i class="fas fa-clock" style="font-size:2rem;color:var(--muted);margin-bottom:12px"></i>
+                            <p style="color:var(--muted);margin:0">Results for Batch 2023 coming soon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-pro-item">
+                    <button class="accordion-pro-btn" id="acc-btn-2022" onclick="toggleAccordion('2022')">
+                        <div style="display:flex;align-items:center;gap:16px">
+                            <span class="accordion-year-badge">2022</span>
+                            <span>NBSS Xth Board Toppers — 2022</span>
+                        </div>
+                        <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="accordion-pro-body" id="acc-body-2022">
+                        <div style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
+                            <i class="fas fa-clock" style="font-size:2rem;color:var(--muted);margin-bottom:12px"></i>
+                            <p style="color:var(--muted);margin:0">Results for Batch 2022 coming soon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-pro-item">
+                    <button class="accordion-pro-btn" id="acc-btn-2021" onclick="toggleAccordion('2021')">
+                        <div style="display:flex;align-items:center;gap:16px">
+                            <span class="accordion-year-badge">2021</span>
+                            <span>NBSS Xth Board Toppers — 2021</span>
+                        </div>
+                        <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="accordion-pro-body" id="acc-body-2021">
+                        <div style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
+                            <i class="fas fa-clock" style="font-size:2rem;color:var(--muted);margin-bottom:12px"></i>
+                            <p style="color:var(--muted);margin:0">Results for Batch 2021 coming soon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-pro-item">
+                    <button class="accordion-pro-btn" id="acc-btn-2020" onclick="toggleAccordion('2020')">
+                        <div style="display:flex;align-items:center;gap:16px">
+                            <span class="accordion-year-badge">2020</span>
+                            <span>NBSS Xth Board Toppers — 2020</span>
+                        </div>
+                        <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="accordion-pro-body" id="acc-body-2020">
+                        <div style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
+                            <i class="fas fa-clock" style="font-size:2rem;color:var(--muted);margin-bottom:12px"></i>
+                            <p style="color:var(--muted);margin:0">Results for Batch 2020 coming soon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-pro-item">
+                    <button class="accordion-pro-btn" id="acc-btn-2019" onclick="toggleAccordion('2019')">
+                        <div style="display:flex;align-items:center;gap:16px">
+                            <span class="accordion-year-badge">2019</span>
+                            <span>NBSS Xth Board Toppers — 2019</span>
+                        </div>
+                        <div class="accordion-pro-icon"><i class="fas fa-plus"></i></div>
+                    </button>
+                    <div class="accordion-pro-body" id="acc-body-2019">
+                        <div style="text-align:center;padding:24px;background:var(--light-bg);border-radius:var(--radius-md)">
+                            <i class="fas fa-clock" style="font-size:2rem;color:var(--muted);margin-bottom:12px"></i>
+                            <p style="color:var(--muted);margin:0">Results for Batch 2019 coming soon.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Appointment End -->
+    </section>
 
-        <div class="accordion" id="accordionExample" style="width: 100%;">
-            <div class="accordion-item" style="width: 100%;">
-              <h2 class="accordion-header" style="display: flex; justify-content: center; width: 100%;">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="width: 100%;">
-                  # NBSS Xth Topper 2024
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body" style="text-align: center;">
-                  <img src="https://nbss.co.in/img/17.jpg" style="max-width: 100%; height: auto;">
-                </div>
-              </div>
+    <!-- PHOTO GALLERY PREVIEW -->
+    <section class="section-pad-sm" style="background:var(--light-bg)">
+        <div class="container" style="max-width:1200px">
+            <div class="section-header fade-up">
+                <span class="section-eyebrow">Moments</span>
+                <h2 class="section-title">Our School <span class="accent">Gallery</span></h2>
+                <div class="divider-line"></div>
             </div>
-          
-            <div class="accordion-item" style="width: 100%;">
-              <h2 class="accordion-header" style="display: flex; justify-content: center;">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  # NBSS Xth Topper 2023
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body" style="text-align: center;">
-                  <strong>2023 batch coming soon.</strong>
+            <div class="gallery-preview-grid fade-up">
+                <div class="gallery-preview-item">
+                    <img src="https://nbss.co.in/img/10.jpg" alt="NBSS School Photo">
+                    <div class="gallery-overlay"></div>
                 </div>
-              </div>
-            </div>
-          
-            <div class="accordion-item" style="width: 100%;">
-              <h2 class="accordion-header" style="display: flex; justify-content: center;">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  # NBSS Xth Topper 2022
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body" style="text-align: center;">
-                  <strong>2022 batch coming soon.</strong>
+                <div class="gallery-preview-item" style="grid-row: span 2;">
+                    <img src="https://nbss.co.in/img/5.jpg" alt="NBSS School Photo" style="height:100%">
+                    <div class="gallery-overlay"></div>
                 </div>
-              </div>
-            </div>
-          
-            <div class="accordion-item" style="width: 100%;">
-              <h2 class="accordion-header" style="display: flex; justify-content: center;">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  # NBSS Xth Topper 2021
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body" style="text-align: center;">
-                  <strong>2021 batch coming soon.</strong>
+                <div class="gallery-preview-item">
+                    <img src="https://nbss.co.in/img/11.jpg" alt="NBSS School Photo">
+                    <div class="gallery-overlay"></div>
                 </div>
-              </div>
-            </div>
-          
-            <div class="accordion-item" style="width: 100%;">
-              <h2 class="accordion-header" style="display: flex; justify-content: center;">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  # NBSS Xth Topper 2020
-                </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body" style="text-align: center;">
-                  <strong>2020 batch coming soon.</strong>
+                <div class="gallery-preview-item">
+                    <img src="https://nbss.co.in/img/12.jpg" alt="NBSS School Photo">
+                    <div class="gallery-overlay"></div>
                 </div>
-              </div>
-            </div>
-
-            <div class="accordion-item" style="width: 100%;">
-                <h2 class="accordion-header" style="display: flex; justify-content: center;">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    # NBSS Xth Topper 2019
-                  </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" style="text-align: center;">
-                    <strong>2019 batch coming soon.</strong>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="accordion-item" style="width: 100%;">
-                <h2 class="accordion-header" style="display: flex; justify-content: center;">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    # NBSS Xth Topper 2018
-                  </button>
-                </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" style="text-align: center;">
-                    <strong>2018 batch coming soon.</strong>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="accordion-item" style="width: 100%;">
-                <h2 class="accordion-header" style="display: flex; justify-content: center;">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    # NBSS Xth Topper 2017
-                  </button>
-                </h2>
-                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" style="text-align: center;">
-                    <strong>2017 batch coming soon.</strong>
-                  </div>
-                </div>
-              </div>
-          
-            <div class="accordion-item" style="width: 100%;">
-              <h2 class="accordion-header" style="display: flex; justify-content: center;">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                  # NBSS Xth Topper 2016
-                </button>
-              </h2>
-              <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body" style="text-align: center;">
-                  <strong>2016 batch coming soon.</strong>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="accordion-item" style="width: 100%;">
-                <h2 class="accordion-header" style="display: flex; justify-content: center;">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                    # NBSS Xth Topper 2015
-                  </button>
-                </h2>
-                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" style="text-align: center;">
-                    <strong>2015 batch coming soon.</strong>
-                  </div>
-                </div>
-              </div>
-          </div>
-          
-          
-
-        <!-- Team Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Our Teachers</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
-                        eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team.png" alt="">
-                            <div class="team-text">
-                                <h3>NBSS Rai</h3>
-                                <p>Science</p>
-                                <div class="d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-100" src="img/sujeet.png" alt="">
-                            <div class="team-text">
-                                <h3>Sujeet Dwivedi</h3>
-                                <p>Maths</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item position-relative">
-                            <img class="img-fluid rounded-circle w-75" src="img/team.png" alt="">
-                            <div class="team-text">
-                                <h3>NBSS Rai</h3>
-                                <p>S.St</p>
-                                <div class="d-flex align-items-center">
-                                    <a class="btn btn-square btn-primary mx-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="gallery-preview-item">
+                    <img src="https://nbss.co.in/img/13.jpg" alt="NBSS School Photo">
+                    <div class="gallery-overlay"></div>
                 </div>
             </div>
-        </div> -->
-        <!-- Team End -->
-
-
-        <!-- Testimonial Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Students Reviews!</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="testimonial-item bg-light rounded p-5">
-                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
-                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
-                            <div class="ps-3">
-                                <h3 class="mb-1">Client Name</h3>
-                                <span>Profession</span>
-                            </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded p-5">
-                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
-                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
-                            <div class="ps-3">
-                                <h3 class="mb-1">Client Name</h3>
-                                <span>Profession</span>
-                            </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded p-5">
-                        <p class="fs-5">Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
-                        <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
-                            <div class="ps-3">
-                                <h3 class="mb-1">Client Name</h3>
-                                <span>Profession</span>
-                            </div>
-                            <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+            <div style="text-align:center;margin-top:36px">
+                <a href="gallery" class="btn-gold" style="display:inline-flex">
+                    <i class="fas fa-images"></i> View Full Gallery
+                </a>
+            </div>
         </div>
-        <!-- Testimonial End -->
+    </section>
 
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="container" style="max-width:1200px">
                 <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-brand-name">NBSS</div>
+                        <div class="footer-brand-sub">Nirmala Brijendra Shikshan Sansthan</div>
+                        <p class="footer-desc">A CBSE affiliated English Medium School in Shukulpur, dedicated to academic excellence and the holistic development of every student since 2011.</p>
+                        <div class="footer-social-links">
+                            <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://wa.me/919794491737" class="footer-social-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="footer-heading">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="gallery">Photo Gallery</a></li>
+                            <li><a href="#admission">Admissions</a></li>
+                            <li><a href="#toppers">Toppers</a></li>
+                            <li><a href="chairman">Chairman</a></li>
+                        </ul>
+                    </div>
                     <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Get In Touch</h3>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Shukulpur, Sangipur - 230139</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9794491737</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@nbss.co.in</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <h5 class="footer-heading">Get In Touch</h5>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <span>Shukulpur, Sangipur<br>Pratapgarh, UP - 230139</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <a href="tel:+919794491737" style="color:rgba(255,255,255,0.55);text-decoration:none">+91 97944 91737</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+                            <a href="mailto:info@nbss.co.in" style="color:rgba(255,255,255,0.55);text-decoration:none">info@nbss.co.in</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+                            <a href="mailto:principal@nbss.co.in" style="color:rgba(255,255,255,0.55);text-decoration:none">principal@nbss.co.in</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Quick Links</h3>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Photo Gallery</h3>
-                        <div class="row g-2 pt-2">
-                            <div class="col-4">
-                                <img style="height: 154px; width: 154px;" class="img-fluid rounded bg-light p-1" src="https://nbss.co.in/img/10.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img style="height: 154px; width: 154px;" class="img-fluid rounded bg-light p-1" src="https://nbss.co.in/img/11.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img style="height: 154px; width: 154px;" class="img-fluid rounded bg-light p-1" src="https://nbss.co.in/img/12.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img style="height: 154px; width: 154px;" class="img-fluid rounded bg-light p-1" src="https://nbss.co.in/img/13.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img style="height: 154px; width: 154px;" class="img-fluid rounded bg-light p-1" src="https://nbss.co.in/img/2.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img style="height: 154px; width: 154px;" class="img-fluid rounded bg-light p-1" src="https://nbss.co.in/img/3.jpg" alt="">
-                            </div>
-                            <a href="gallery" class="btn btn-success rounded-pill"><img src="https://nbss.co.in/img/33.gif"> View All Photos<i class="fa fa-arrow-right ms-3"></i></a>
-
+                        <h5 class="footer-heading">Photo Gallery</h5>
+                        <div class="footer-gallery-grid" style="margin-bottom:16px">
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/10.jpg" alt="Gallery"></div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/11.jpg" alt="Gallery"></div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/12.jpg" alt="Gallery"></div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/13.jpg" alt="Gallery"></div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/2.jpg" alt="Gallery"></div>
+                            <div class="footer-gallery-item"><img src="https://nbss.co.in/img/3.jpg" alt="Gallery"></div>
                         </div>
-
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Newsletter</h3>
-                        <p>For importamt school events & announcements</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a href="#">NBSS. All Right Reserved.</a><br> Nirmala Brijendra Shikshan Sansthan<br>Shukulpur, Sangipur, PBH - 230139<br> 
-							
-							Devloped & Designed By <a  href="#">Mrityunjaya Tripathi</a><hr>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
+                        <a href="gallery" style="display:inline-flex;align-items:center;gap:8px;color:var(--secondary);font-size:13px;font-weight:600;text-decoration:none">
+                            <i class="fas fa-arrow-right"></i> View All Photos
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+        <div class="container" style="max-width:1200px">
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2024 <a href="#">NBSS Shukulpur</a>. All Rights Reserved. &nbsp;·&nbsp;
+                    Designed & Developed by <a href="#">Mrityunjaya Tripathi</a>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- BOTTOM TICKER -->
+    <div class="bottom-ticker">
+        <div class="bottom-ticker-label">📢 Announcements</div>
+        <div class="bottom-ticker-content">
+            <div class="bottom-ticker-scroll">
+                <span><span class="ticker-bullet">●</span> Admission for Batch 2024-25 are open from Class LKG to IXth Standard.</span>
+                <span><span class="ticker-bullet">●</span> Parent-Teacher Meeting every month — all parents are requested to attend.</span>
+                <span><span class="ticker-bullet">●</span> School operates two terms: April–September & October–March.</span>
+                <span><span class="ticker-bullet">●</span> For Admission, contact: +91 97944 91737 or WhatsApp directly.</span>
+                <span><span class="ticker-bullet">●</span> Remedial classes available for weaker students.</span>
+            </div>
+        </div>
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top-btn" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
+        // ===================== PRELOADER =====================
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('preloader').classList.add('hidden');
+            }, 1600);
+        });
+
+        // ===================== DATE DISPLAY =====================
         function formatDate() {
             var today = new Date();
             var day = String(today.getDate()).padStart(2, '0');
-            var month = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+            var month = String(today.getMonth() + 1).padStart(2, '0');
             var year = today.getFullYear();
             return day + '/' + month + '/' + year;
         }
-
         function displayDate() {
             document.getElementById('current-date').textContent = formatDate();
         }
 
-
-       
-
-    document.addEventListener("DOMContentLoaded", function() {
-    const defaultThought = "Honesty is the best policy";
-
-    fetch('thought.txt')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('thought').innerText = data || defaultThought;
-        })
-        .catch(error => {
-            console.error('Error fetching the thought:', error);
-            document.getElementById('thought').innerText = defaultThought;
+        // ===================== THOUGHT OF THE DAY =====================
+        document.addEventListener('DOMContentLoaded', function () {
+            const defaultThought = "Honesty is the best policy";
+            fetch('thought.txt')
+                .then(r => r.ok ? r.text() : Promise.reject())
+                .then(data => document.getElementById('thought').innerText = data.trim() || defaultThought)
+                .catch(() => document.getElementById('thought').innerText = defaultThought);
         });
-});
 
+        // ===================== NAVBAR SCROLL =====================
+        const mainNavbar = document.getElementById('mainNavbar');
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                mainNavbar.classList.add('scrolled');
+                backToTop.classList.add('visible');
+            } else {
+                mainNavbar.classList.remove('scrolled');
+                backToTop.classList.remove('visible');
+            }
+        });
 
+        // ===================== MOBILE NAVBAR =====================
+        document.getElementById('navToggler').addEventListener('click', function () {
+            const collapse = document.getElementById('navCollapse');
+            collapse.classList.toggle('show');
+        });
 
+        // ===================== HERO SLIDER =====================
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.hero-dot');
+
+        function goToSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => goToSlide(i));
+        });
+
+        const sliderInterval = setInterval(() => goToSlide(currentSlide + 1), 5500);
+
+        // ===================== ACCORDION =====================
+        function toggleAccordion(year) {
+            const btn = document.getElementById('acc-btn-' + year);
+            const body = document.getElementById('acc-body-' + year);
+            const isOpen = btn.classList.contains('open');
+
+            document.querySelectorAll('.accordion-pro-btn').forEach(b => b.classList.remove('open'));
+            document.querySelectorAll('.accordion-pro-body').forEach(b => b.classList.remove('show'));
+
+            if (!isOpen) {
+                btn.classList.add('open');
+                body.classList.add('show');
+            }
+        }
+
+        // ===================== FADE-UP ANIMATIONS =====================
+        const fadeEls = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        fadeEls.forEach(el => observer.observe(el));
+
+        // ===================== SMOOTH ANCHOR =====================
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
     </script>
 </body>
-
 </html>
