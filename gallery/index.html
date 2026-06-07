@@ -1,139 +1,570 @@
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Album | NBSS Shukulpur</title>
-  <link rel="shortcut icon" href="Images/favicon.jpg" type="image/x-icon" />
-  <link rel="Stylesheet" href="style/bootstrap.css" type="text/css" />
-  <link rel="Stylesheet" href="style/font-awesome.min.css" type="text/css" />
-  <link rel="Stylesheet" href="style/style.css" type="text/css" />
+    <meta charset="utf-8">
+    <title>Photo Gallery | NBSS Shukulpur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the vibrant moments from NBSS Shukulpur — festivals, sports, academics and more captured beautifully.">
+    <meta name="keywords" content="NBSS Gallery, NBSS Photos, NBSS Shukulpur Gallery, School Events">
 
-  <style type="text/css">
-    p.detail {
-      color: #4C4C4C;
-      font-weight: bold;
-      font-family: Calibri;
-      font-size: 20
-    }
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-    span.name {
-      color: yellow;
-      font-weight: bold;
-      font-family: Tahoma;
-      font-size: 20;
-      text-decoration: underline
-    }
-  </style>
+    <style>
+        :root {
+            --primary: #1a3a6b;
+            --primary-light: #2563eb;
+            --secondary: #e8b54a;
+            --dark: #0f172a;
+            --text: #334155;
+            --muted: #64748b;
+            --light-bg: #f8faff;
+            --white: #ffffff;
+            --gradient-primary: linear-gradient(135deg, #1a3a6b 0%, #2563eb 100%);
+            --gradient-gold: linear-gradient(135deg, #b8860b 0%, #e8b54a 50%, #ffd700 100%);
+            --shadow-sm: 0 2px 8px rgba(26,58,107,0.08);
+            --shadow-md: 0 8px 32px rgba(26,58,107,0.14);
+            --shadow-lg: 0 20px 60px rgba(26,58,107,0.18);
+            --shadow-xl: 0 30px 80px rgba(26,58,107,0.24);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: var(--light-bg);
+            overflow-x: hidden;
+        }
+
+        /* ======= SCROLLBAR ======= */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--light-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 3px; }
+
+        /* ======= NAVBAR ======= */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(26,58,107,0.08);
+            padding: 0 32px;
+            box-shadow: 0 2px 20px rgba(26,58,107,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 68px;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .brand-logo {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            padding: 2px;
+        }
+        .brand-logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .brand-sub {
+            font-size: 9px;
+            font-weight: 600;
+            color: var(--muted);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: block;
+            margin-top: 2px;
+        }
+        .navbar-back {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-light);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 9px 20px;
+            border-radius: 50px;
+            border: 1.5px solid rgba(37,99,235,0.25);
+            transition: var(--transition);
+        }
+        .navbar-back:hover {
+            background: var(--primary-light);
+            color: white;
+            border-color: var(--primary-light);
+            transform: translateX(-3px);
+        }
+
+        /* ======= HERO BANNER ======= */
+        .gallery-hero {
+            background: var(--gradient-primary);
+            padding: 80px 32px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery-hero::before {
+            content: '';
+            position: absolute;
+            top: -60%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 50%;
+        }
+        .gallery-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -40%;
+            left: -5%;
+            width: 400px;
+            height: 400px;
+            background: rgba(232,181,74,0.05);
+            border-radius: 50%;
+        }
+        .gallery-hero-content { position: relative; z-index: 2; }
+        .gallery-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(232,181,74,0.15);
+            border: 1px solid rgba(232,181,74,0.35);
+            color: var(--secondary);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .gallery-hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            font-weight: 800;
+            color: white;
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+        .gallery-hero-title span {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gallery-hero-sub {
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.7);
+            max-width: 520px;
+            margin: 0 auto 32px;
+            line-height: 1.8;
+        }
+        .hero-photo-count {
+            display: inline-flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .photo-stat {
+            text-align: center;
+        }
+        .photo-stat-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: white;
+        }
+        .photo-stat-num span { color: var(--secondary); }
+        .photo-stat-label {
+            font-size: 11px;
+            color: rgba(255,255,255,0.55);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .hero-stat-sep {
+            width: 1px;
+            height: 40px;
+            background: rgba(255,255,255,0.15);
+        }
+
+        /* ======= YEAR CARDS ======= */
+        .albums-section {
+            max-width: 1200px;
+            margin: -48px auto 0;
+            padding: 0 32px 80px;
+            position: relative;
+            z-index: 10;
+        }
+        .year-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            text-decoration: none;
+            display: block;
+            border: 1px solid rgba(26,58,107,0.06);
+        }
+        .year-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+        .year-card-thumb {
+            position: relative;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+        }
+        .year-card-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .year-card:hover .year-card-thumb img { transform: scale(1.08); }
+        .year-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 40%, rgba(15,23,42,0.85) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 24px;
+            opacity: 0;
+            transition: var(--transition);
+        }
+        .year-card:hover .year-card-overlay { opacity: 1; }
+        .overlay-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--gradient-gold);
+            color: var(--dark);
+            font-size: 13px;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 50px;
+            align-self: flex-start;
+        }
+        .year-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: var(--gradient-primary);
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 14px;
+            border-radius: 50px;
+            letter-spacing: 1px;
+            backdrop-filter: blur(10px);
+        }
+        .year-card-body { padding: 24px; }
+        .year-card-session {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--primary-light);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .year-card-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+        .year-card-desc {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .year-card-albums {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .album-tag {
+            background: var(--light-bg);
+            color: var(--text);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid rgba(26,58,107,0.08);
+        }
+        .year-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            border-top: 1px solid rgba(26,58,107,0.06);
+        }
+        .view-all-link {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap 0.3s;
+        }
+        .year-card:hover .view-all-link { gap: 10px; }
+        .photo-count-badge {
+            font-size: 12px;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* ======= FEATURED ROW ======= */
+        .featured-strip {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px 80px;
+        }
+        .strip-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
+        .strip-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--dark);
+        }
+        .strip-eyebrow {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--primary-light);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        /* ======= FOOTER ======= */
+        .site-footer {
+            background: var(--dark);
+            padding: 32px;
+            text-align: center;
+        }
+        .footer-text {
+            font-size: 13px;
+            color: rgba(255,255,255,0.45);
+        }
+        .footer-text a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        /* ======= RESPONSIVE ======= */
+        @media (max-width: 768px) {
+            .gallery-hero { padding: 60px 20px 80px; }
+            .albums-section { padding: 0 16px 60px; margin-top: -36px; }
+            .featured-strip { padding: 0 16px 60px; }
+            .navbar { padding: 0 16px; }
+            .hero-photo-count { gap: 16px; }
+        }
+
+        /* ======= GRID ======= */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 28px;
+        }
+
+        /* ======= ANIMATION ======= */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+        .fade-up-delay-1 { transition-delay: 0.1s; }
+        .fade-up-delay-2 { transition-delay: 0.2s; }
+        .fade-up-delay-3 { transition-delay: 0.3s; }
+    </style>
 </head>
-
 <body>
 
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="https://nbss.co.in" class="navbar-brand">
+            <div class="brand-logo">
+                <img src="https://nbss.co.in/img/nbsslogo.jpg" alt="NBSS Logo">
+            </div>
+            <div>
+                <span class="brand-name">NBSS</span>
+                <span class="brand-sub">Shukulpur · Est. 2011</span>
+            </div>
+        </a>
+        <a href="https://nbss.co.in" class="navbar-back">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </nav>
 
-  <div class="container-fluid">
-    <div class="row ">
-      <div class="container-fluid logobg visible-xs">
-        <div class="row">
-          <div class="col-md-12"><a href="https://nbss.co.in"> <img src="f.gif" class="img-responsive center-block"
-                alt="NBSS" /></a> </div>
+    <!-- HERO -->
+    <div class="gallery-hero">
+        <div class="gallery-hero-content">
+            <div class="gallery-eyebrow">
+                <i class="fas fa-images"></i> School Memories
+            </div>
+            <h1 class="gallery-hero-title">
+                NBSS <span>Photo Gallery</span>
+            </h1>
+            <p class="gallery-hero-sub">
+                A visual journey through our school's vibrant life — from festivals and sports to academics and cultural celebrations, captured year by year.
+            </p>
+            <div class="hero-photo-count">
+                <div class="photo-stat">
+                    <div class="photo-stat-num">3<span>+</span></div>
+                    <div class="photo-stat-label">Sessions</div>
+                </div>
+                <div class="hero-stat-sep"></div>
+                <div class="photo-stat">
+                    <div class="photo-stat-num">15<span>+</span></div>
+                    <div class="photo-stat-label">Events</div>
+                </div>
+                <div class="hero-stat-sep"></div>
+                <div class="photo-stat">
+                    <div class="photo-stat-num">100<span>+</span></div>
+                    <div class="photo-stat-label">Photos</div>
+                </div>
+            </div>
         </div>
-      </div>
-
-
-
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 right-side ">
-        <div class="row">
-          <div class="col-md-12 innertopbgr"></div>
-        </div>
-
-
-        <div class="row">
-          <div class="clr10"></div>
-          <div class="col-md-10 col-sm-10 col-xs-10">
-            <h1 class="heading bot-pad-20" style="text-align: center; padding-left: 100px;">NBSS GALLERY</h1>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div id="showThree" class="myDiv selected_year">
-
-            <div class='col-xs-6 col-sm-6 col-md-3 gallerygrid'><a href='2024'>
-                <div class='gal-cate'>
-                  <h3>Session 2024-25</h3><img src=2024/teacher/1.jpg class='img-responsive gal-img' alt='CNSSS' />
-                  <h5>View all...</h5>
-                </div>
-              </a></div>
-
-            <!-- <div class='col-xs-6 col-sm-6 col-md-3 gallerygrid'><a href='album/2023'>
-                <div class='gal-cate'>
-                  <h3>Session 2023-24</h3><img src=album/20-21/krishna/2.jpg class='img-responsive gal-img'
-                    alt='CNSSS' />
-                  <h5>View all...</h5>
-                </div>
-              </a></div> -->
-
-            <!-- <div class='col-xs-6 col-sm-6 col-md-3 gallerygrid'><a href='album/2022'>
-                <div class='gal-cate'>
-                  <h3>Session 2022-23</h3><img src=album/20-21/raksha/1.jpg class='img-responsive gal-img'
-                    alt='CNSSS' />
-                  <h5>View all...</h5>
-                </div>
-              </a></div> -->
-
-            <!-- <div class='col-xs-6 col-sm-6 col-md-3 gallerygrid'><a href='album/2021'>
-                <div class='gal-cate'>
-                  <h3>Session 2021-22</h3><img src=album/20-21/kargil/1.jpg class='img-responsive gal-img'
-                    alt='CNSSS' />
-                  <h5>View all...</h5>
-                </div>
-              </a></div> -->
-
-            <div class='col-xs-6 col-sm-6 col-md-3 gallerygrid'><a href='2020'>
-                <div class='gal-cate'>
-                  <h3>Session 2020-21</h3><img src=2020/krishna/2.jpg class='img-responsive gal-img'
-                    alt='CNSSS' />
-                  <h5>View all...</h5>
-                </div>
-              </a></div>
-
-            <!-- <div class='col-xs-6 col-sm-6 col-md-3 gallerygrid'><a href='album/2019'>
-                <div class='gal-cate'>
-                  <h3>Session 2019-20</h3><img src=album/20-21/kargil/1.jpg class='img-responsive gal-img'
-                    alt='CNSSS' />
-                  <h5>View all...</h5>
-                </div>
-              </a></div> -->
-
-            <div class='col-xs-6 col-sm-6 col-md-3 gallerygrid'><a href='2018'>
-                <div class='gal-cate'>
-                  <h3>Session 2018-19</h3><img src=2018/doll/1.jpg class='img-responsive gal-img'
-                    alt='CNSSS' />
-                  <h5>View all...</h5>
-                </div>
-              </a></div>
-          </div>
-        </div>
-
-      </div>
     </div>
-  </div>
-  </div>
-  <div class="clr40"></div>
-  <!-------------------------------------Footer Section--------------------------------------->
 
-  <div class="footer"> Copyright 2024 By <span> NBSS, </span> Shukulpur &nbsp; | &nbsp; Managed & Hosted By <span
-      class="entab-link"><a href="https://www.instagram.com/iz_mrityunjaya" target="_blank"> <span
-          class="name">Mrityunjaya Tripathi</span></a></span>
+    <!-- ALBUM CARDS -->
+    <section class="albums-section">
+        <div class="cards-grid">
 
-  </div>
+            <!-- 2024 -->
+            <a href="2024" class="year-card fade-up fade-up-delay-1">
+                <div class="year-card-thumb">
+                    <img src="2024/teacher/1.jpg" alt="Session 2024-25" onerror="this.src='https://nbss.co.in/img/5.jpg'">
+                    <div class="year-badge">Latest</div>
+                    <div class="year-card-overlay">
+                        <span class="overlay-btn"><i class="fas fa-eye"></i> View Album</span>
+                    </div>
+                </div>
+                <div class="year-card-body">
+                    <div class="year-card-session">Session 2024 – 25</div>
+                    <h3 class="year-card-title">Academic Year 2024-25</h3>
+                    <p class="year-card-desc">Celebrating Yoga Day, Ramcharitmanas Path, Teacher's Workshop and many more memorable events of this year.</p>
+                    <div class="year-card-albums">
+                        <span class="album-tag">🧘 Yoga Day</span>
+                        <span class="album-tag">📖 रामचरित मानस</span>
+                        <span class="album-tag">👩‍🏫 Teacher's Workshop</span>
+                    </div>
+                </div>
+                <div class="year-card-footer">
+                    <span class="view-all-link">View All Photos <i class="fas fa-arrow-right"></i></span>
+                    <span class="photo-count-badge"><i class="fas fa-image"></i> 3 Albums</span>
+                </div>
+            </a>
 
-  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <!-- 2020 -->
+            <a href="2020" class="year-card fade-up fade-up-delay-2">
+                <div class="year-card-thumb">
+                    <img src="2020/krishna/2.jpg" alt="Session 2020-21" onerror="this.src='https://nbss.co.in/img/3.jpg'">
+                    <div class="year-badge">2020</div>
+                    <div class="year-card-overlay">
+                        <span class="overlay-btn"><i class="fas fa-eye"></i> View Album</span>
+                    </div>
+                </div>
+                <div class="year-card-body">
+                    <div class="year-card-session">Session 2020 – 21</div>
+                    <h3 class="year-card-title">Academic Year 2020-21</h3>
+                    <p class="year-card-desc">Independence Day, Krishna Janmashtami, Rakshabandhan, Kargil Victory Day, Ramcharitmanas Path, Teacher's Day and Hindi Diwas.</p>
+                    <div class="year-card-albums">
+                        <span class="album-tag">🇮🇳 Independence Day</span>
+                        <span class="album-tag">🪔 Janmashtami</span>
+                        <span class="album-tag">🎗️ Rakshabandhan</span>
+                        <span class="album-tag">+ 4 more</span>
+                    </div>
+                </div>
+                <div class="year-card-footer">
+                    <span class="view-all-link">View All Photos <i class="fas fa-arrow-right"></i></span>
+                    <span class="photo-count-badge"><i class="fas fa-image"></i> 7 Albums</span>
+                </div>
+            </a>
 
+            <!-- 2018 -->
+            <a href="2018" class="year-card fade-up fade-up-delay-3">
+                <div class="year-card-thumb">
+                    <img src="2018/doll/1.jpg" alt="Session 2018-19" onerror="this.src='https://nbss.co.in/img/2.jpg'">
+                    <div class="year-badge">2018</div>
+                    <div class="year-card-overlay">
+                        <span class="overlay-btn"><i class="fas fa-eye"></i> View Album</span>
+                    </div>
+                </div>
+                <div class="year-card-body">
+                    <div class="year-card-session">Session 2018 – 19</div>
+                    <h3 class="year-card-title">Academic Year 2018-19</h3>
+                    <p class="year-card-desc">Rakshabandhan celebration, Independence Day, Rangoli competition and Doll competition from an eventful year.</p>
+                    <div class="year-card-albums">
+                        <span class="album-tag">🎗️ Rakshabandhan</span>
+                        <span class="album-tag">🇮🇳 Independence Day</span>
+                        <span class="album-tag">🎨 Rangoli</span>
+                        <span class="album-tag">🪆 Doll Comp.</span>
+                    </div>
+                </div>
+                <div class="year-card-footer">
+                    <span class="view-all-link">View All Photos <i class="fas fa-arrow-right"></i></span>
+                    <span class="photo-count-badge"><i class="fas fa-image"></i> 4 Albums</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p class="footer-text">
+            &copy; 2024 <a href="https://nbss.co.in">NBSS Shukulpur</a>. All Rights Reserved. &nbsp;·&nbsp;
+            Designed by <a href="https://www.instagram.com/iz_mrityunjaya" target="_blank">Mrityunjaya Tripathi</a>
+        </p>
+    </footer>
+
+    <script>
+        const fadeEls = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+            });
+        }, { threshold: 0.1 });
+        fadeEls.forEach(el => observer.observe(el));
+    </script>
 </body>
-
 </html>
